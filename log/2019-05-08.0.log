@@ -1,0 +1,117 @@
+2019-05-08 17:38:39,688 INFO (StartupInfoLogger.java:50)- Starting PiccApplication on 好友老驴上线 with PID 31120 (started by dell in C:\Users\dell\Desktop\picc客服服务\Picc)
+2019-05-08 17:38:39,688 DEBUG (StartupInfoLogger.java:53)- Running with Spring Boot v2.1.3.RELEASE, Spring v5.1.5.RELEASE
+2019-05-08 17:38:39,689 INFO (SpringApplication.java:675)- No active profile set, falling back to default profiles: default
+2019-05-08 17:38:44,960 INFO (StartupInfoLogger.java:59)- Started PiccApplication in 6.526 seconds (JVM running for 11.049)
+2019-05-08 17:39:16,972 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT m.* FROM menu AS m,rolemenu AS rm WHERE m.mid=rm.mid AND rm.roleid=? AND m.pid IS NULL 
+2019-05-08 17:39:16,998 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: null
+2019-05-08 17:39:17,024 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 0
+2019-05-08 17:39:27,641 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT u.*,ur.rid FROM USER u,userrole ur WHERE u.userid=ur.uid AND userCode=? and userPwd=? 
+2019-05-08 17:39:27,642 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: admin(String), 123(String)
+2019-05-08 17:39:27,648 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2019-05-08 17:39:27,976 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT m.* FROM menu AS m,rolemenu AS rm WHERE m.mid=rm.mid AND rm.roleid=? AND m.pid IS NULL 
+2019-05-08 17:39:27,977 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: null
+2019-05-08 17:39:27,979 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 0
+2019-05-08 17:40:51,813 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT u.*,ur.rid FROM USER u,userrole ur WHERE u.userid=ur.uid AND userCode=? and userPwd=? 
+2019-05-08 17:40:51,814 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: lijiawei(String), 123(String)
+2019-05-08 17:40:51,815 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 0
+2019-05-08 17:40:52,107 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT m.* FROM menu AS m,rolemenu AS rm WHERE m.mid=rm.mid AND rm.roleid=? AND m.pid IS NULL 
+2019-05-08 17:40:52,108 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: null
+2019-05-08 17:40:52,109 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 0
+2019-05-08 17:43:54,887 INFO (StartupInfoLogger.java:50)- Starting PiccApplication on 好友老驴上线 with PID 38820 (started by dell in C:\Users\dell\Desktop\picc客服服务\Picc)
+2019-05-08 17:43:54,888 DEBUG (StartupInfoLogger.java:53)- Running with Spring Boot v2.1.3.RELEASE, Spring v5.1.5.RELEASE
+2019-05-08 17:43:54,889 INFO (SpringApplication.java:675)- No active profile set, falling back to default profiles: default
+2019-05-08 17:43:58,781 INFO (StartupInfoLogger.java:59)- Started PiccApplication in 4.602 seconds (JVM running for 5.962)
+2019-05-08 17:44:15,930 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT u.*,ur.rid FROM USER u,userrole ur WHERE u.userid=ur.uid AND userCode=? and userPwd=? 
+2019-05-08 17:44:15,959 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: admin(String), 123(String)
+2019-05-08 17:44:15,984 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2019-05-08 17:44:16,384 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT m.* FROM menu AS m,rolemenu AS rm WHERE m.mid=rm.mid AND rm.roleid=? AND m.pid IS NULL 
+2019-05-08 17:44:16,385 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: null
+2019-05-08 17:44:16,386 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 0
+2019-05-08 17:46:36,409 INFO (StartupInfoLogger.java:50)- Starting PiccApplication on 好友老驴上线 with PID 25868 (started by dell in C:\Users\dell\Desktop\picc客服服务\Picc)
+2019-05-08 17:46:36,410 DEBUG (StartupInfoLogger.java:53)- Running with Spring Boot v2.1.3.RELEASE, Spring v5.1.5.RELEASE
+2019-05-08 17:46:36,411 INFO (SpringApplication.java:675)- No active profile set, falling back to default profiles: default
+2019-05-08 17:46:39,642 INFO (StartupInfoLogger.java:59)- Started PiccApplication in 4.04 seconds (JVM running for 5.502)
+2019-05-08 17:47:11,241 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT u.*,ur.rid FROM USER u,userrole ur WHERE u.userid=ur.uid AND userCode=? and userPwd=? 
+2019-05-08 17:47:11,264 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: admin(String), admin(String)
+2019-05-08 17:47:11,284 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 0
+2019-05-08 17:47:11,725 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT m.* FROM menu AS m,rolemenu AS rm WHERE m.mid=rm.mid AND rm.roleid=? AND m.pid IS NULL 
+2019-05-08 17:47:11,727 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: null
+2019-05-08 17:47:11,728 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 0
+2019-05-08 17:47:50,163 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT u.*,ur.rid FROM USER u,userrole ur WHERE u.userid=ur.uid AND userCode=? and userPwd=? 
+2019-05-08 17:47:50,164 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: admin(String), 123(String)
+2019-05-08 17:47:50,169 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2019-05-08 17:48:36,086 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT m.* FROM menu AS m,rolemenu AS rm WHERE m.mid=rm.mid AND rm.roleid=? AND m.pid IS NULL 
+2019-05-08 17:48:36,088 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: null
+2019-05-08 17:48:36,089 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 0
+2019-05-08 17:48:43,237 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT u.*,ur.rid FROM USER u,userrole ur WHERE u.userid=ur.uid AND userCode=? and userPwd=? 
+2019-05-08 17:48:43,238 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: admin(String), 12(String)
+2019-05-08 17:48:43,239 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 0
+2019-05-08 17:48:48,180 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT m.* FROM menu AS m,rolemenu AS rm WHERE m.mid=rm.mid AND rm.roleid=? AND m.pid IS NULL 
+2019-05-08 17:48:48,181 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: null
+2019-05-08 17:48:48,182 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 0
+2019-05-08 17:48:52,690 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT u.*,ur.rid FROM USER u,userrole ur WHERE u.userid=ur.uid AND userCode=? and userPwd=? 
+2019-05-08 17:48:52,691 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: admin(String), ●●3(String)
+2019-05-08 17:48:52,692 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 0
+2019-05-08 17:48:57,016 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT m.* FROM menu AS m,rolemenu AS rm WHERE m.mid=rm.mid AND rm.roleid=? AND m.pid IS NULL 
+2019-05-08 17:48:57,017 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: null
+2019-05-08 17:48:57,019 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 0
+2019-05-08 17:49:04,978 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT u.*,ur.rid FROM USER u,userrole ur WHERE u.userid=ur.uid AND userCode=? and userPwd=? 
+2019-05-08 17:49:04,979 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: admin(String), 123(String)
+2019-05-08 17:49:04,980 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2019-05-08 17:49:48,690 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT m.* FROM menu AS m,rolemenu AS rm WHERE m.mid=rm.mid AND rm.roleid=? AND m.pid IS NULL 
+2019-05-08 17:49:48,691 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: null
+2019-05-08 17:49:48,693 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 0
+2019-05-08 17:58:11,419 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT u.*,ur.rid FROM USER u,userrole ur WHERE u.userid=ur.uid AND userCode=? and userPwd=? 
+2019-05-08 17:58:11,420 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: admin(String), 123(String)
+2019-05-08 17:58:11,422 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2019-05-08 17:58:11,778 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT m.* FROM menu AS m,rolemenu AS rm WHERE m.mid=rm.mid AND rm.roleid=? AND m.pid IS NULL 
+2019-05-08 17:58:11,779 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 1(Integer)
+2019-05-08 17:58:11,783 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 6
+2019-05-08 17:58:11,811 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT m2.* FROM menu m1,menu m2 WHERE m1.mid=m2.pid AND m2.pid=? 
+2019-05-08 17:58:11,812 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 1(Integer)
+2019-05-08 17:58:11,814 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2019-05-08 17:58:11,819 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT m2.* FROM menu m1,menu m2 WHERE m1.mid=m2.pid AND m2.pid=? 
+2019-05-08 17:58:11,820 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 4(Integer)
+2019-05-08 17:58:11,821 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 2
+2019-05-08 17:58:11,827 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT m2.* FROM menu m1,menu m2 WHERE m1.mid=m2.pid AND m2.pid=? 
+2019-05-08 17:58:11,827 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 5(Integer)
+2019-05-08 17:58:11,829 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 3
+2019-05-08 17:58:11,836 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT m2.* FROM menu m1,menu m2 WHERE m1.mid=m2.pid AND m2.pid=? 
+2019-05-08 17:58:11,837 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 6(Integer)
+2019-05-08 17:58:11,842 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 3
+2019-05-08 17:58:11,846 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT m2.* FROM menu m1,menu m2 WHERE m1.mid=m2.pid AND m2.pid=? 
+2019-05-08 17:58:11,847 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 9(Integer)
+2019-05-08 17:58:11,857 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 3
+2019-05-08 17:58:11,860 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT m2.* FROM menu m1,menu m2 WHERE m1.mid=m2.pid AND m2.pid=? 
+2019-05-08 17:58:11,861 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 7(Integer)
+2019-05-08 17:58:11,862 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 3
+2019-05-08 17:58:14,904 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT count(*) FROM newcar WHERE submission = 0 and reject = 0 and state = 1 
+2019-05-08 17:58:14,905 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
+2019-05-08 17:58:14,905 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT count(*) FROM newcar WHERE reject = 1 and submission = 0 and state =1 
+2019-05-08 17:58:14,907 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
+2019-05-08 17:58:14,908 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2019-05-08 17:58:14,908 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2019-05-08 17:58:14,927 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT nw.*,u.userName FROM newcar AS nw,USER AS u WHERE nw.`userId`=u.`userid` ORDER BY ncId DESC 
+2019-05-08 17:58:14,928 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
+2019-05-08 17:58:14,932 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 10
+2019-05-08 17:58:15,395 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT count(*) FROM newcar WHERE receive = 0 and approval = 1 
+2019-05-08 17:58:15,396 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
+2019-05-08 17:58:15,396 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT nw.*,u.userName FROM newcar AS nw,USER AS u WHERE nw.`userId`=u.`userid` AND approval=1 AND submission = 1 and receive = 1 and nw.state in (1,2) ORDER BY ncId DESC 
+2019-05-08 17:58:15,396 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT count(*) FROM newcar WHERE state= 3 
+2019-05-08 17:58:15,396 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
+2019-05-08 17:58:15,396 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
+2019-05-08 17:58:15,398 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2019-05-08 17:58:15,398 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2019-05-08 17:58:15,399 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2019-05-08 17:58:16,579 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT nw.*,u.userName FROM newcar AS nw,USER AS u WHERE nw.`userId`=u.`userid` AND reject = 0 AND submission = 1 and nw.state = 1 ORDER BY ncId DESC 
+2019-05-08 17:58:16,580 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
+2019-05-08 17:58:16,582 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 2
+2019-05-08 17:58:18,794 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT count(*) FROM newcar WHERE submission = 0 and reject = 0 and state = 1 
+2019-05-08 17:58:18,795 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
+2019-05-08 17:58:18,796 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2019-05-08 17:58:18,808 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT nw.*,u.userName FROM newcar AS nw,USER AS u WHERE nw.`userId`=u.`userid` and submission = 0 and reject = 0 and nw.state in (1,2,3) ORDER BY ncId DESC 
+2019-05-08 17:58:18,808 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
+2019-05-08 17:58:18,813 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 6
+2019-05-08 17:58:19,484 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT count(*) FROM newcar WHERE reject = 1 and submission = 0 and state =1 
+2019-05-08 17:58:19,484 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
+2019-05-08 17:58:19,485 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1

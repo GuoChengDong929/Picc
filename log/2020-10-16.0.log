@@ -1,0 +1,85 @@
+2020-10-16 09:04:40,036 INFO (StartupInfoLogger.java:50)- Starting PiccApplication on LAPTOP-APNN79DT with PID 7492 (C:\Users\Admin\IdeaProjects\picc\Picc\target\classes started by Admin in C:\Users\Admin\IdeaProjects\picc\Picc)
+2020-10-16 09:04:40,036 DEBUG (StartupInfoLogger.java:53)- Running with Spring Boot v2.1.3.RELEASE, Spring v5.1.5.RELEASE
+2020-10-16 09:04:40,038 INFO (SpringApplication.java:675)- No active profile set, falling back to default profiles: default
+2020-10-16 09:04:43,648 INFO (StartupInfoLogger.java:59)- Started PiccApplication in 4.572 seconds (JVM running for 7.067)
+2020-10-16 09:07:08,932 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT u.*,ur.rid FROM USER u,userrole ur WHERE u.userid=ur.uid AND userCode=? and userPwd=? 
+2020-10-16 09:07:08,955 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: admin(String), 123456(String)
+2020-10-16 09:07:09,014 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2020-10-16 09:07:09,324 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT m.* FROM menu AS m,rolemenu AS rm WHERE m.mid=rm.mid AND rm.roleid=? AND m.pid IS NULL 
+2020-10-16 09:07:09,325 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 1(Integer)
+2020-10-16 09:07:09,338 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 6
+2020-10-16 09:07:09,358 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT m2.* FROM menu m1,menu m2 WHERE m1.mid=m2.pid AND m2.pid=? 
+2020-10-16 09:07:09,358 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 1(Integer)
+2020-10-16 09:07:09,362 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2020-10-16 09:07:09,368 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT m2.* FROM menu m1,menu m2 WHERE m1.mid=m2.pid AND m2.pid=? 
+2020-10-16 09:07:09,368 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 4(Integer)
+2020-10-16 09:07:09,369 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 2
+2020-10-16 09:07:09,375 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT m2.* FROM menu m1,menu m2 WHERE m1.mid=m2.pid AND m2.pid=? 
+2020-10-16 09:07:09,375 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 5(Integer)
+2020-10-16 09:07:09,377 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 3
+2020-10-16 09:07:09,382 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT m2.* FROM menu m1,menu m2 WHERE m1.mid=m2.pid AND m2.pid=? 
+2020-10-16 09:07:09,382 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 6(Integer)
+2020-10-16 09:07:09,383 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 3
+2020-10-16 09:07:09,388 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT m2.* FROM menu m1,menu m2 WHERE m1.mid=m2.pid AND m2.pid=? 
+2020-10-16 09:07:09,389 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 9(Integer)
+2020-10-16 09:07:09,391 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 3
+2020-10-16 09:07:09,397 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT m2.* FROM menu m1,menu m2 WHERE m1.mid=m2.pid AND m2.pid=? 
+2020-10-16 09:07:09,397 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 7(Integer)
+2020-10-16 09:07:09,399 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 3
+2020-10-16 09:07:11,907 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select * from department 
+2020-10-16 09:07:11,908 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
+2020-10-16 09:07:11,914 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 7
+2020-10-16 09:07:11,928 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select * from department 
+2020-10-16 09:07:11,929 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
+2020-10-16 09:07:11,931 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 7
+2020-10-16 09:07:12,014 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT u.*,d.dName,ud.udid,d.did as did FROM `userdeparment` ud,`user` u,`department` d WHERE ud.uid=u.userid AND ud.did=d.did order by userid desc 
+2020-10-16 09:07:12,015 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
+2020-10-16 09:07:12,031 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 11
+2020-10-16 14:04:17,109 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT u.*,ur.rid FROM USER u,userrole ur WHERE u.userid=ur.uid AND userCode=? and userPwd=? 
+2020-10-16 14:04:17,119 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: admin(String), 123456(String)
+2020-10-16 14:04:17,198 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2020-10-16 14:04:17,494 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT m.* FROM menu AS m,rolemenu AS rm WHERE m.mid=rm.mid AND rm.roleid=? AND m.pid IS NULL 
+2020-10-16 14:04:17,494 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 1(Integer)
+2020-10-16 14:04:17,530 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 6
+2020-10-16 14:04:17,539 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT m2.* FROM menu m1,menu m2 WHERE m1.mid=m2.pid AND m2.pid=? 
+2020-10-16 14:04:17,540 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 1(Integer)
+2020-10-16 14:04:17,546 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2020-10-16 14:04:17,553 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT m2.* FROM menu m1,menu m2 WHERE m1.mid=m2.pid AND m2.pid=? 
+2020-10-16 14:04:17,553 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 4(Integer)
+2020-10-16 14:04:17,556 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 2
+2020-10-16 14:04:17,561 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT m2.* FROM menu m1,menu m2 WHERE m1.mid=m2.pid AND m2.pid=? 
+2020-10-16 14:04:17,562 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 5(Integer)
+2020-10-16 14:04:17,565 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 3
+2020-10-16 14:04:17,576 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT m2.* FROM menu m1,menu m2 WHERE m1.mid=m2.pid AND m2.pid=? 
+2020-10-16 14:04:17,577 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 6(Integer)
+2020-10-16 14:04:17,578 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 3
+2020-10-16 14:04:17,584 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT m2.* FROM menu m1,menu m2 WHERE m1.mid=m2.pid AND m2.pid=? 
+2020-10-16 14:04:17,585 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 9(Integer)
+2020-10-16 14:04:17,588 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 3
+2020-10-16 14:04:17,593 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT m2.* FROM menu m1,menu m2 WHERE m1.mid=m2.pid AND m2.pid=? 
+2020-10-16 14:04:17,594 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 7(Integer)
+2020-10-16 14:04:17,595 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 3
+2020-10-16 14:04:21,253 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT m.*,u.userName FROM mishu AS m,USER AS u WHERE m.`userId`=u.`userid` AND reject = 0 AND submission = 1 and m.state in (1,2) ORDER BY msId DESC 
+2020-10-16 14:04:21,254 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
+2020-10-16 14:04:21,263 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 6
+2020-10-16 14:04:22,174 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT d.*,u.userName FROM designated AS d,USER AS u WHERE u.`userId`=d.`userid` AND approval=1 AND submission = 1 and d.state in (1,2) ORDER BY dgId DESC 
+2020-10-16 14:04:22,175 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
+2020-10-16 14:04:22,188 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 3
+2020-10-16 14:04:23,083 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT count(*) FROM substitutevehicle WHERE state= 3 
+2020-10-16 14:04:23,083 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
+2020-10-16 14:04:23,083 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT nw.*,u.userName FROM `substitutevehicle` AS nw,USER AS u WHERE nw.`userId`=u.`userid` AND approval=1 AND submission = 1 AND nw.state IN (1,2) ORDER BY msId DESC 
+2020-10-16 14:04:23,084 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
+2020-10-16 14:04:23,095 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 4
+2020-10-16 14:04:23,100 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2020-10-16 14:04:24,835 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT nw.*,u.userName FROM newcar AS nw,USER AS u WHERE nw.`userId`=u.`userid` AND reject = 0 AND submission = 1 and nw.state = 1 ORDER BY ncId DESC 
+2020-10-16 14:04:24,836 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
+2020-10-16 14:04:24,846 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 2
+2020-10-16 14:04:30,490 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select * from department 
+2020-10-16 14:04:30,490 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
+2020-10-16 14:04:30,509 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 7
+2020-10-16 14:04:30,511 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select * from department 
+2020-10-16 14:04:30,512 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
+2020-10-16 14:04:30,517 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 7
+2020-10-16 14:04:30,603 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT u.*,d.dName,ud.udid,d.did as did FROM `userdeparment` ud,`user` u,`department` d WHERE ud.uid=u.userid AND ud.did=d.did order by userid desc 
+2020-10-16 14:04:30,604 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
+2020-10-16 14:04:30,627 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 11

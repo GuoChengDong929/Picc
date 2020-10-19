@@ -1,0 +1,1958 @@
+2020-10-15 08:48:25,700 INFO (StartupInfoLogger.java:50)- Starting PiccApplication on LAPTOP-APNN79DT with PID 4164 (C:\Users\Admin\IdeaProjects\picc\Picc\target\classes started by Admin in C:\Users\Admin\IdeaProjects\picc\Picc)
+2020-10-15 08:48:25,701 DEBUG (StartupInfoLogger.java:53)- Running with Spring Boot v2.1.3.RELEASE, Spring v5.1.5.RELEASE
+2020-10-15 08:48:25,702 INFO (SpringApplication.java:675)- No active profile set, falling back to default profiles: default
+2020-10-15 08:48:30,164 INFO (StartupInfoLogger.java:59)- Started PiccApplication in 5.578 seconds (JVM running for 8.445)
+2020-10-15 08:48:45,951 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT m.* FROM menu AS m,rolemenu AS rm WHERE m.mid=rm.mid AND rm.roleid=? AND m.pid IS NULL 
+2020-10-15 08:48:46,005 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: null
+2020-10-15 08:48:46,075 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 0
+2020-10-15 08:49:01,377 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT u.*,ur.rid FROM USER u,userrole ur WHERE u.userid=ur.uid AND userCode=? and userPwd=? 
+2020-10-15 08:49:01,378 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: admin(String), 123(String)
+2020-10-15 08:49:01,389 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2020-10-15 08:49:01,680 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT m.* FROM menu AS m,rolemenu AS rm WHERE m.mid=rm.mid AND rm.roleid=? AND m.pid IS NULL 
+2020-10-15 08:49:01,681 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 1(Integer)
+2020-10-15 08:49:01,690 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 6
+2020-10-15 08:49:01,713 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT m2.* FROM menu m1,menu m2 WHERE m1.mid=m2.pid AND m2.pid=? 
+2020-10-15 08:49:01,713 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 1(Integer)
+2020-10-15 08:49:01,717 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2020-10-15 08:49:01,724 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT m2.* FROM menu m1,menu m2 WHERE m1.mid=m2.pid AND m2.pid=? 
+2020-10-15 08:49:01,724 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 4(Integer)
+2020-10-15 08:49:01,726 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 2
+2020-10-15 08:49:01,732 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT m2.* FROM menu m1,menu m2 WHERE m1.mid=m2.pid AND m2.pid=? 
+2020-10-15 08:49:01,732 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 5(Integer)
+2020-10-15 08:49:01,734 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 3
+2020-10-15 08:49:01,739 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT m2.* FROM menu m1,menu m2 WHERE m1.mid=m2.pid AND m2.pid=? 
+2020-10-15 08:49:01,739 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 6(Integer)
+2020-10-15 08:49:01,741 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 3
+2020-10-15 08:49:01,746 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT m2.* FROM menu m1,menu m2 WHERE m1.mid=m2.pid AND m2.pid=? 
+2020-10-15 08:49:01,746 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 9(Integer)
+2020-10-15 08:49:01,750 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 3
+2020-10-15 08:49:01,756 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT m2.* FROM menu m1,menu m2 WHERE m1.mid=m2.pid AND m2.pid=? 
+2020-10-15 08:49:01,756 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 7(Integer)
+2020-10-15 08:49:01,758 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 3
+2020-10-15 08:49:05,842 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select * from department 
+2020-10-15 08:49:05,843 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
+2020-10-15 08:49:05,848 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 7
+2020-10-15 08:49:05,857 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select * from department 
+2020-10-15 08:49:05,858 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
+2020-10-15 08:49:05,864 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 7
+2020-10-15 08:49:05,947 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT u.*,d.dName,ud.udid,d.did as did FROM `userdeparment` ud,`user` u,`department` d WHERE ud.uid=u.userid AND ud.did=d.did order by userid desc 
+2020-10-15 08:49:05,947 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
+2020-10-15 08:49:05,954 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 10
+2020-10-15 08:49:28,794 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT u.*,d.dName,ud.udid,d.did FROM `userdeparment` ud,`user` u,`department` d WHERE ud.uid=u.userid AND ud.did=d.did and userCode = ? 
+2020-10-15 08:49:28,795 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: lijiawei(String)
+2020-10-15 08:49:28,797 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2020-10-15 08:49:28,816 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT * FROM user WHERE userCode = ? 
+2020-10-15 08:49:28,818 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: lijiawei(String)
+2020-10-15 08:49:28,819 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2020-10-15 08:49:32,086 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT * FROM user WHERE userCode = ? 
+2020-10-15 08:49:32,087 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: lijiawei(String)
+2020-10-15 08:49:32,090 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT * FROM user WHERE userCode = ? 
+2020-10-15 08:49:32,090 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2020-10-15 08:49:32,090 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: lijiawei(String)
+2020-10-15 08:49:32,095 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2020-10-15 08:49:33,374 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT * FROM user WHERE userCode = ? 
+2020-10-15 08:49:33,376 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: lijiawei(String)
+2020-10-15 08:49:33,378 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2020-10-15 08:49:33,445 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT * FROM user WHERE userCode = ? 
+2020-10-15 08:49:33,446 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: lijiawei(String)
+2020-10-15 08:49:33,449 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2020-10-15 08:49:33,449 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT * FROM user WHERE userCode = ? 
+2020-10-15 08:49:33,450 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: lijiawei(String)
+2020-10-15 08:49:33,452 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2020-10-15 08:49:33,652 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT * FROM user WHERE userCode = ? 
+2020-10-15 08:49:33,652 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: lijiawei(String)
+2020-10-15 08:49:33,656 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT * FROM user WHERE userCode = ? 
+2020-10-15 08:49:33,655 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2020-10-15 08:49:33,657 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: lijiawei(String)
+2020-10-15 08:49:33,659 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2020-10-15 08:49:33,813 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT * FROM user WHERE userCode = ? 
+2020-10-15 08:49:33,813 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: lijiawei(String)
+2020-10-15 08:49:33,816 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2020-10-15 08:49:33,816 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT * FROM user WHERE userCode = ? 
+2020-10-15 08:49:33,817 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: lijiawei(String)
+2020-10-15 08:49:33,819 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2020-10-15 08:49:35,506 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT * FROM user WHERE userCode = ? 
+2020-10-15 08:49:35,507 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: lijiawei(String)
+2020-10-15 08:49:35,508 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT * FROM user WHERE userCode = ? 
+2020-10-15 08:49:35,508 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: lijiawei(String)
+2020-10-15 08:49:35,508 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2020-10-15 08:49:35,509 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2020-10-15 08:49:38,815 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT * FROM user WHERE userCode = ? 
+2020-10-15 08:49:38,815 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT * FROM user WHERE userCode = ? 
+2020-10-15 08:49:38,815 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: lijiawei(String)
+2020-10-15 08:49:38,815 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: lijiawei(String)
+2020-10-15 08:49:38,817 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2020-10-15 08:49:38,817 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2020-10-15 08:49:48,181 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT * FROM user WHERE userCode = ? 
+2020-10-15 08:49:48,182 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: lijiawei(String)
+2020-10-15 08:49:48,184 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2020-10-15 08:49:48,183 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT * FROM user WHERE userCode = ? 
+2020-10-15 08:49:48,185 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: lijiawei(String)
+2020-10-15 08:49:48,187 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2020-10-15 08:49:48,408 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT * FROM user WHERE userCode = ? 
+2020-10-15 08:49:48,410 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: lijiawei(String)
+2020-10-15 08:49:48,410 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT * FROM user WHERE userCode = ? 
+2020-10-15 08:49:48,411 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: lijiawei(String)
+2020-10-15 08:49:48,411 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2020-10-15 08:49:48,413 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2020-10-15 08:50:03,353 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: UPDATE user SET userPwd=? WHERE userCode=? 
+2020-10-15 08:50:03,354 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 123456(String), admin(String)
+2020-10-15 08:50:03,361 DEBUG (BaseJdbcLogger.java:159)- <==    Updates: 1
+2020-10-15 08:50:15,420 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT u.*,ur.rid FROM USER u,userrole ur WHERE u.userid=ur.uid AND userCode=? and userPwd=? 
+2020-10-15 08:50:15,421 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: admin(String), 123(String)
+2020-10-15 08:50:15,424 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 0
+2020-10-15 08:50:16,814 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT u.*,ur.rid FROM USER u,userrole ur WHERE u.userid=ur.uid AND userCode=? and userPwd=? 
+2020-10-15 08:50:16,815 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: admin(String), 123(String)
+2020-10-15 08:50:16,816 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 0
+2020-10-15 08:50:19,972 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT u.*,ur.rid FROM USER u,userrole ur WHERE u.userid=ur.uid AND userCode=? and userPwd=? 
+2020-10-15 08:50:19,973 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: admin(String), 123456(String)
+2020-10-15 08:50:19,975 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2020-10-15 08:50:20,155 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT m.* FROM menu AS m,rolemenu AS rm WHERE m.mid=rm.mid AND rm.roleid=? AND m.pid IS NULL 
+2020-10-15 08:50:20,157 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 1(Integer)
+2020-10-15 08:50:20,167 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 6
+2020-10-15 08:50:20,176 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT m2.* FROM menu m1,menu m2 WHERE m1.mid=m2.pid AND m2.pid=? 
+2020-10-15 08:50:20,177 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 1(Integer)
+2020-10-15 08:50:20,183 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2020-10-15 08:50:20,193 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT m2.* FROM menu m1,menu m2 WHERE m1.mid=m2.pid AND m2.pid=? 
+2020-10-15 08:50:20,195 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 4(Integer)
+2020-10-15 08:50:20,197 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 2
+2020-10-15 08:50:20,206 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT m2.* FROM menu m1,menu m2 WHERE m1.mid=m2.pid AND m2.pid=? 
+2020-10-15 08:50:20,206 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 5(Integer)
+2020-10-15 08:50:20,207 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 3
+2020-10-15 08:50:20,216 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT m2.* FROM menu m1,menu m2 WHERE m1.mid=m2.pid AND m2.pid=? 
+2020-10-15 08:50:20,216 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 6(Integer)
+2020-10-15 08:50:20,217 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 3
+2020-10-15 08:50:20,224 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT m2.* FROM menu m1,menu m2 WHERE m1.mid=m2.pid AND m2.pid=? 
+2020-10-15 08:50:20,224 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 9(Integer)
+2020-10-15 08:50:20,226 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 3
+2020-10-15 08:50:20,232 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT m2.* FROM menu m1,menu m2 WHERE m1.mid=m2.pid AND m2.pid=? 
+2020-10-15 08:50:20,232 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 7(Integer)
+2020-10-15 08:50:20,235 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 3
+2020-10-15 08:50:22,495 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select * from department 
+2020-10-15 08:50:22,496 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
+2020-10-15 08:50:22,499 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 7
+2020-10-15 08:50:22,513 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select * from department 
+2020-10-15 08:50:22,513 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
+2020-10-15 08:50:22,515 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 7
+2020-10-15 08:50:22,581 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT u.*,d.dName,ud.udid,d.did as did FROM `userdeparment` ud,`user` u,`department` d WHERE ud.uid=u.userid AND ud.did=d.did order by userid desc 
+2020-10-15 08:50:22,581 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
+2020-10-15 08:50:22,589 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 10
+2020-10-15 08:50:29,228 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT * FROM user WHERE userCode = ? 
+2020-10-15 08:50:29,228 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: a(String)
+2020-10-15 08:50:29,229 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 0
+2020-10-15 08:50:29,631 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT * FROM user WHERE userCode = ? 
+2020-10-15 08:50:29,631 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: ad(String)
+2020-10-15 08:50:29,633 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 0
+2020-10-15 08:50:30,031 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT * FROM user WHERE userCode = ? 
+2020-10-15 08:50:30,031 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: admin(String)
+2020-10-15 08:50:30,033 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2020-10-15 08:50:30,234 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT * FROM user WHERE userCode = ? 
+2020-10-15 08:50:30,235 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: admin(String)
+2020-10-15 08:50:30,237 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2020-10-15 08:50:32,254 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT * FROM user WHERE userCode = ? 
+2020-10-15 08:50:32,254 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: admin2(String)
+2020-10-15 08:50:32,256 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 0
+2020-10-15 08:50:34,272 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT * FROM user WHERE userCode = ? 
+2020-10-15 08:50:34,272 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: admin(String)
+2020-10-15 08:50:34,273 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2020-10-15 08:50:34,875 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT * FROM user WHERE userCode = ? 
+2020-10-15 08:50:34,875 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: admins(String)
+2020-10-15 08:50:34,877 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 0
+2020-10-15 08:50:35,551 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT * FROM user WHERE userCode = ? 
+2020-10-15 08:50:35,551 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: admins(String)
+2020-10-15 08:50:35,553 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 0
+2020-10-15 08:51:21,520 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT * FROM user WHERE userCode = ? 
+2020-10-15 08:51:21,520 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: admins(String)
+2020-10-15 08:51:21,523 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 0
+2020-10-15 08:51:21,525 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT * FROM user WHERE userCode = ? 
+2020-10-15 08:51:21,525 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: admins(String)
+2020-10-15 08:51:21,526 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: INSERT INTO user ( userCode ,userName,userPwd,userGender,userAge,userPhone,mailbox,userCompany,state ) VALUES( ?, ?, ?, ?, ?, ?, ?, ?, 1 ) 
+2020-10-15 08:51:21,528 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 0
+2020-10-15 08:51:21,528 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: admins(String), 狗子(String), 111(String), 1(Integer), 12(Integer), 13731097630(String), (String), ssss(String)
+2020-10-15 08:51:21,536 DEBUG (BaseJdbcLogger.java:159)- <==    Updates: 1
+2020-10-15 08:51:21,551 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT * FROM user WHERE userCode = ? 
+2020-10-15 08:51:21,551 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: admins(String)
+2020-10-15 08:51:21,553 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2020-10-15 08:51:21,567 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: INSERT INTO userdeparment ( uid ,did ) VALUES( ?, ? ) 
+2020-10-15 08:51:21,568 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 23(Integer), 2(Integer)
+2020-10-15 08:51:21,572 DEBUG (BaseJdbcLogger.java:159)- <==    Updates: 1
+2020-10-15 08:51:21,594 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT u.*,d.dName,ud.udid,d.did as did FROM `userdeparment` ud,`user` u,`department` d WHERE ud.uid=u.userid AND ud.did=d.did order by userid desc 
+2020-10-15 08:51:21,594 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
+2020-10-15 08:51:21,597 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 11
+2020-10-15 08:51:42,674 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT u.*,d.dName,ud.udid,d.did FROM `userdeparment` ud,`user` u,`department` d WHERE ud.uid=u.userid AND ud.did=d.did and userCode = ? 
+2020-10-15 08:51:42,675 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: lijiawei(String)
+2020-10-15 08:51:42,676 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2020-10-15 08:51:42,694 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT * FROM user WHERE userCode = ? 
+2020-10-15 08:51:42,695 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: lijiawei(String)
+2020-10-15 08:51:42,697 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2020-10-15 08:51:57,292 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT u.*,d.dName,ud.udid,d.did FROM `userdeparment` ud,`user` u,`department` d WHERE ud.uid=u.userid AND ud.did=d.did and userCode = ? 
+2020-10-15 08:51:57,293 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 007(String)
+2020-10-15 08:51:57,294 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2020-10-15 09:18:59,967 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT m.* FROM menu AS m,rolemenu AS rm WHERE m.mid=rm.mid AND rm.roleid=? AND m.pid IS NULL 
+2020-10-15 09:18:59,968 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 1(Integer)
+2020-10-15 09:18:59,976 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 6
+2020-10-15 09:18:59,984 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT m2.* FROM menu m1,menu m2 WHERE m1.mid=m2.pid AND m2.pid=? 
+2020-10-15 09:18:59,985 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 1(Integer)
+2020-10-15 09:18:59,989 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2020-10-15 09:18:59,996 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT m2.* FROM menu m1,menu m2 WHERE m1.mid=m2.pid AND m2.pid=? 
+2020-10-15 09:18:59,997 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 4(Integer)
+2020-10-15 09:18:59,998 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 2
+2020-10-15 09:19:00,004 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT m2.* FROM menu m1,menu m2 WHERE m1.mid=m2.pid AND m2.pid=? 
+2020-10-15 09:19:00,005 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 5(Integer)
+2020-10-15 09:19:00,006 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 3
+2020-10-15 09:19:00,013 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT m2.* FROM menu m1,menu m2 WHERE m1.mid=m2.pid AND m2.pid=? 
+2020-10-15 09:19:00,013 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 6(Integer)
+2020-10-15 09:19:00,014 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 3
+2020-10-15 09:19:00,020 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT m2.* FROM menu m1,menu m2 WHERE m1.mid=m2.pid AND m2.pid=? 
+2020-10-15 09:19:00,020 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 9(Integer)
+2020-10-15 09:19:00,021 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 3
+2020-10-15 09:19:00,027 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT m2.* FROM menu m1,menu m2 WHERE m1.mid=m2.pid AND m2.pid=? 
+2020-10-15 09:19:00,027 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 7(Integer)
+2020-10-15 09:19:00,029 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 3
+2020-10-15 09:19:10,940 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select * from department 
+2020-10-15 09:19:10,941 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
+2020-10-15 09:19:10,945 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 7
+2020-10-15 09:19:10,956 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select * from department 
+2020-10-15 09:19:10,956 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
+2020-10-15 09:19:10,958 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 7
+2020-10-15 09:19:11,025 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT u.*,d.dName,ud.udid,d.did as did FROM `userdeparment` ud,`user` u,`department` d WHERE ud.uid=u.userid AND ud.did=d.did order by userid desc 
+2020-10-15 09:19:11,025 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
+2020-10-15 09:19:11,035 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 11
+2020-10-15 09:50:31,080 INFO (StartupInfoLogger.java:50)- Starting PiccApplication on LAPTOP-APNN79DT with PID 14896 (C:\Users\Admin\IdeaProjects\picc\Picc\target\classes started by Admin in C:\Users\Admin\IdeaProjects\picc\Picc)
+2020-10-15 09:50:31,081 DEBUG (StartupInfoLogger.java:53)- Running with Spring Boot v2.1.3.RELEASE, Spring v5.1.5.RELEASE
+2020-10-15 09:50:31,082 INFO (SpringApplication.java:675)- No active profile set, falling back to default profiles: default
+2020-10-15 09:50:33,942 INFO (StartupInfoLogger.java:59)- Started PiccApplication in 3.543 seconds (JVM running for 5.467)
+2020-10-15 09:51:06,564 ERROR (BaseController.java:284)- 系统异常:Could not open JDBC Connection for transaction; nested exception is com.mysql.cj.jdbc.exceptions.CommunicationsException: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+org.springframework.transaction.CannotCreateTransactionException: Could not open JDBC Connection for transaction; nested exception is com.mysql.cj.jdbc.exceptions.CommunicationsException: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+	at org.springframework.jdbc.datasource.DataSourceTransactionManager.doBegin(DataSourceTransactionManager.java:305)
+	at org.springframework.transaction.support.AbstractPlatformTransactionManager.getTransaction(AbstractPlatformTransactionManager.java:378)
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.createTransactionIfNecessary(TransactionAspectSupport.java:474)
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:289)
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:98)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:688)
+	at com.bdqn.service.impl.MenuServiceImpl$$EnhancerBySpringCGLIB$$68ecb21a.shu(<generated>)
+	at com.bdqn.controller.MenuController.shu(MenuController.java:63)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:189)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:138)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:102)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:800)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1038)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:942)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1005)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:908)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:660)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:882)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:92)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:200)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:200)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:490)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:408)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:834)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1415)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: com.mysql.cj.jdbc.exceptions.CommunicationsException: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+	at com.mysql.cj.jdbc.exceptions.SQLError.createCommunicationsException(SQLError.java:174)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:64)
+	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:835)
+	at com.mysql.cj.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:455)
+	at com.mysql.cj.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:240)
+	at com.mysql.cj.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:199)
+	at com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:136)
+	at com.zaxxer.hikari.pool.PoolBase.newConnection(PoolBase.java:369)
+	at com.zaxxer.hikari.pool.PoolBase.newPoolEntry(PoolBase.java:198)
+	at com.zaxxer.hikari.pool.HikariPool.createPoolEntry(HikariPool.java:467)
+	at com.zaxxer.hikari.pool.HikariPool.checkFailFast(HikariPool.java:541)
+	at com.zaxxer.hikari.pool.HikariPool.<init>(HikariPool.java:115)
+	at com.zaxxer.hikari.HikariDataSource.getConnection(HikariDataSource.java:112)
+	at org.springframework.jdbc.datasource.DataSourceTransactionManager.doBegin(DataSourceTransactionManager.java:262)
+	... 62 common frames omitted
+Caused by: com.mysql.cj.exceptions.CJCommunicationsException: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:61)
+	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:105)
+	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:151)
+	at com.mysql.cj.exceptions.ExceptionFactory.createCommunicationsException(ExceptionFactory.java:167)
+	at com.mysql.cj.protocol.a.NativeSocketConnection.connect(NativeSocketConnection.java:91)
+	at com.mysql.cj.NativeSession.connect(NativeSession.java:152)
+	at com.mysql.cj.jdbc.ConnectionImpl.connectOneTryOnly(ConnectionImpl.java:955)
+	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:825)
+	... 73 common frames omitted
+Caused by: java.net.ConnectException: Connection refused: connect
+	at java.net.DualStackPlainSocketImpl.waitForConnect(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketConnect(DualStackPlainSocketImpl.java:85)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:172)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:589)
+	at com.mysql.cj.protocol.StandardSocketFactory.connect(StandardSocketFactory.java:155)
+	at com.mysql.cj.protocol.a.NativeSocketConnection.connect(NativeSocketConnection.java:65)
+	... 76 common frames omitted
+2020-10-15 09:51:13,065 ERROR (BaseController.java:284)- 系统异常:Could not open JDBC Connection for transaction; nested exception is com.mysql.cj.jdbc.exceptions.CommunicationsException: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+org.springframework.transaction.CannotCreateTransactionException: Could not open JDBC Connection for transaction; nested exception is com.mysql.cj.jdbc.exceptions.CommunicationsException: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+	at org.springframework.jdbc.datasource.DataSourceTransactionManager.doBegin(DataSourceTransactionManager.java:305)
+	at org.springframework.transaction.support.AbstractPlatformTransactionManager.getTransaction(AbstractPlatformTransactionManager.java:378)
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.createTransactionIfNecessary(TransactionAspectSupport.java:474)
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:289)
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:98)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:688)
+	at com.bdqn.service.impl.MenuServiceImpl$$EnhancerBySpringCGLIB$$68ecb21a.shu(<generated>)
+	at com.bdqn.controller.MenuController.shu(MenuController.java:63)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:189)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:138)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:102)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:800)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1038)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:942)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1005)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:908)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:660)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:882)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:92)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:200)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:200)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:490)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:408)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:834)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1415)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: com.mysql.cj.jdbc.exceptions.CommunicationsException: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+	at com.mysql.cj.jdbc.exceptions.SQLError.createCommunicationsException(SQLError.java:174)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:64)
+	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:835)
+	at com.mysql.cj.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:455)
+	at com.mysql.cj.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:240)
+	at com.mysql.cj.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:199)
+	at com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:136)
+	at com.zaxxer.hikari.pool.PoolBase.newConnection(PoolBase.java:369)
+	at com.zaxxer.hikari.pool.PoolBase.newPoolEntry(PoolBase.java:198)
+	at com.zaxxer.hikari.pool.HikariPool.createPoolEntry(HikariPool.java:467)
+	at com.zaxxer.hikari.pool.HikariPool.checkFailFast(HikariPool.java:541)
+	at com.zaxxer.hikari.pool.HikariPool.<init>(HikariPool.java:115)
+	at com.zaxxer.hikari.HikariDataSource.getConnection(HikariDataSource.java:112)
+	at org.springframework.jdbc.datasource.DataSourceTransactionManager.doBegin(DataSourceTransactionManager.java:262)
+	... 62 common frames omitted
+Caused by: com.mysql.cj.exceptions.CJCommunicationsException: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:61)
+	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:105)
+	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:151)
+	at com.mysql.cj.exceptions.ExceptionFactory.createCommunicationsException(ExceptionFactory.java:167)
+	at com.mysql.cj.protocol.a.NativeSocketConnection.connect(NativeSocketConnection.java:91)
+	at com.mysql.cj.NativeSession.connect(NativeSession.java:152)
+	at com.mysql.cj.jdbc.ConnectionImpl.connectOneTryOnly(ConnectionImpl.java:955)
+	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:825)
+	... 73 common frames omitted
+Caused by: java.net.ConnectException: Connection refused: connect
+	at java.net.DualStackPlainSocketImpl.waitForConnect(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketConnect(DualStackPlainSocketImpl.java:85)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:172)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:589)
+	at com.mysql.cj.protocol.StandardSocketFactory.connect(StandardSocketFactory.java:155)
+	at com.mysql.cj.protocol.a.NativeSocketConnection.connect(NativeSocketConnection.java:65)
+	... 76 common frames omitted
+2020-10-15 09:51:18,082 ERROR (BaseController.java:284)- 系统异常:Could not open JDBC Connection for transaction; nested exception is com.mysql.cj.jdbc.exceptions.CommunicationsException: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+org.springframework.transaction.CannotCreateTransactionException: Could not open JDBC Connection for transaction; nested exception is com.mysql.cj.jdbc.exceptions.CommunicationsException: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+	at org.springframework.jdbc.datasource.DataSourceTransactionManager.doBegin(DataSourceTransactionManager.java:305)
+	at org.springframework.transaction.support.AbstractPlatformTransactionManager.getTransaction(AbstractPlatformTransactionManager.java:378)
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.createTransactionIfNecessary(TransactionAspectSupport.java:474)
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:289)
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:98)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:688)
+	at com.bdqn.service.impl.MenuServiceImpl$$EnhancerBySpringCGLIB$$68ecb21a.shu(<generated>)
+	at com.bdqn.controller.MenuController.shu(MenuController.java:63)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:189)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:138)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:102)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:800)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1038)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:942)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1005)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:908)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:660)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:882)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:92)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:200)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:200)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:490)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:408)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:834)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1415)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: com.mysql.cj.jdbc.exceptions.CommunicationsException: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+	at com.mysql.cj.jdbc.exceptions.SQLError.createCommunicationsException(SQLError.java:174)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:64)
+	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:835)
+	at com.mysql.cj.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:455)
+	at com.mysql.cj.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:240)
+	at com.mysql.cj.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:199)
+	at com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:136)
+	at com.zaxxer.hikari.pool.PoolBase.newConnection(PoolBase.java:369)
+	at com.zaxxer.hikari.pool.PoolBase.newPoolEntry(PoolBase.java:198)
+	at com.zaxxer.hikari.pool.HikariPool.createPoolEntry(HikariPool.java:467)
+	at com.zaxxer.hikari.pool.HikariPool.checkFailFast(HikariPool.java:541)
+	at com.zaxxer.hikari.pool.HikariPool.<init>(HikariPool.java:115)
+	at com.zaxxer.hikari.HikariDataSource.getConnection(HikariDataSource.java:112)
+	at org.springframework.jdbc.datasource.DataSourceTransactionManager.doBegin(DataSourceTransactionManager.java:262)
+	... 62 common frames omitted
+Caused by: com.mysql.cj.exceptions.CJCommunicationsException: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:61)
+	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:105)
+	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:151)
+	at com.mysql.cj.exceptions.ExceptionFactory.createCommunicationsException(ExceptionFactory.java:167)
+	at com.mysql.cj.protocol.a.NativeSocketConnection.connect(NativeSocketConnection.java:91)
+	at com.mysql.cj.NativeSession.connect(NativeSession.java:152)
+	at com.mysql.cj.jdbc.ConnectionImpl.connectOneTryOnly(ConnectionImpl.java:955)
+	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:825)
+	... 73 common frames omitted
+Caused by: java.net.ConnectException: Connection refused: connect
+	at java.net.DualStackPlainSocketImpl.waitForConnect(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketConnect(DualStackPlainSocketImpl.java:85)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:172)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:589)
+	at com.mysql.cj.protocol.StandardSocketFactory.connect(StandardSocketFactory.java:155)
+	at com.mysql.cj.protocol.a.NativeSocketConnection.connect(NativeSocketConnection.java:65)
+	... 76 common frames omitted
+2020-10-15 09:51:23,099 ERROR (BaseController.java:284)- 系统异常:Could not open JDBC Connection for transaction; nested exception is com.mysql.cj.jdbc.exceptions.CommunicationsException: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+org.springframework.transaction.CannotCreateTransactionException: Could not open JDBC Connection for transaction; nested exception is com.mysql.cj.jdbc.exceptions.CommunicationsException: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+	at org.springframework.jdbc.datasource.DataSourceTransactionManager.doBegin(DataSourceTransactionManager.java:305)
+	at org.springframework.transaction.support.AbstractPlatformTransactionManager.getTransaction(AbstractPlatformTransactionManager.java:378)
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.createTransactionIfNecessary(TransactionAspectSupport.java:474)
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:289)
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:98)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:688)
+	at com.bdqn.service.impl.MenuServiceImpl$$EnhancerBySpringCGLIB$$68ecb21a.shu(<generated>)
+	at com.bdqn.controller.MenuController.shu(MenuController.java:63)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:189)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:138)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:102)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:800)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1038)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:942)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1005)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:908)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:660)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:882)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:92)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:200)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:200)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:490)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:408)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:834)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1415)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: com.mysql.cj.jdbc.exceptions.CommunicationsException: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+	at com.mysql.cj.jdbc.exceptions.SQLError.createCommunicationsException(SQLError.java:174)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:64)
+	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:835)
+	at com.mysql.cj.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:455)
+	at com.mysql.cj.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:240)
+	at com.mysql.cj.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:199)
+	at com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:136)
+	at com.zaxxer.hikari.pool.PoolBase.newConnection(PoolBase.java:369)
+	at com.zaxxer.hikari.pool.PoolBase.newPoolEntry(PoolBase.java:198)
+	at com.zaxxer.hikari.pool.HikariPool.createPoolEntry(HikariPool.java:467)
+	at com.zaxxer.hikari.pool.HikariPool.checkFailFast(HikariPool.java:541)
+	at com.zaxxer.hikari.pool.HikariPool.<init>(HikariPool.java:115)
+	at com.zaxxer.hikari.HikariDataSource.getConnection(HikariDataSource.java:112)
+	at org.springframework.jdbc.datasource.DataSourceTransactionManager.doBegin(DataSourceTransactionManager.java:262)
+	... 62 common frames omitted
+Caused by: com.mysql.cj.exceptions.CJCommunicationsException: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:61)
+	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:105)
+	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:151)
+	at com.mysql.cj.exceptions.ExceptionFactory.createCommunicationsException(ExceptionFactory.java:167)
+	at com.mysql.cj.protocol.a.NativeSocketConnection.connect(NativeSocketConnection.java:91)
+	at com.mysql.cj.NativeSession.connect(NativeSession.java:152)
+	at com.mysql.cj.jdbc.ConnectionImpl.connectOneTryOnly(ConnectionImpl.java:955)
+	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:825)
+	... 73 common frames omitted
+Caused by: java.net.ConnectException: Connection refused: connect
+	at java.net.DualStackPlainSocketImpl.waitForConnect(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketConnect(DualStackPlainSocketImpl.java:85)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:172)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:589)
+	at com.mysql.cj.protocol.StandardSocketFactory.connect(StandardSocketFactory.java:155)
+	at com.mysql.cj.protocol.a.NativeSocketConnection.connect(NativeSocketConnection.java:65)
+	... 76 common frames omitted
+2020-10-15 09:51:28,139 ERROR (BaseController.java:284)- 系统异常:Could not open JDBC Connection for transaction; nested exception is com.mysql.cj.jdbc.exceptions.CommunicationsException: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+org.springframework.transaction.CannotCreateTransactionException: Could not open JDBC Connection for transaction; nested exception is com.mysql.cj.jdbc.exceptions.CommunicationsException: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+	at org.springframework.jdbc.datasource.DataSourceTransactionManager.doBegin(DataSourceTransactionManager.java:305)
+	at org.springframework.transaction.support.AbstractPlatformTransactionManager.getTransaction(AbstractPlatformTransactionManager.java:378)
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.createTransactionIfNecessary(TransactionAspectSupport.java:474)
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:289)
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:98)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:688)
+	at com.bdqn.service.impl.UserServiceImpl$$EnhancerBySpringCGLIB$$e104a8d6.userLogin(<generated>)
+	at com.bdqn.controller.UserController.userLogin(UserController.java:21)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:189)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:138)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:102)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:800)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1038)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:942)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1005)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:908)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:660)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:882)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:92)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:200)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:200)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:490)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:408)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:834)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1415)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: com.mysql.cj.jdbc.exceptions.CommunicationsException: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+	at com.mysql.cj.jdbc.exceptions.SQLError.createCommunicationsException(SQLError.java:174)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:64)
+	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:835)
+	at com.mysql.cj.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:455)
+	at com.mysql.cj.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:240)
+	at com.mysql.cj.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:199)
+	at com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:136)
+	at com.zaxxer.hikari.pool.PoolBase.newConnection(PoolBase.java:369)
+	at com.zaxxer.hikari.pool.PoolBase.newPoolEntry(PoolBase.java:198)
+	at com.zaxxer.hikari.pool.HikariPool.createPoolEntry(HikariPool.java:467)
+	at com.zaxxer.hikari.pool.HikariPool.checkFailFast(HikariPool.java:541)
+	at com.zaxxer.hikari.pool.HikariPool.<init>(HikariPool.java:115)
+	at com.zaxxer.hikari.HikariDataSource.getConnection(HikariDataSource.java:112)
+	at org.springframework.jdbc.datasource.DataSourceTransactionManager.doBegin(DataSourceTransactionManager.java:262)
+	... 62 common frames omitted
+Caused by: com.mysql.cj.exceptions.CJCommunicationsException: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:61)
+	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:105)
+	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:151)
+	at com.mysql.cj.exceptions.ExceptionFactory.createCommunicationsException(ExceptionFactory.java:167)
+	at com.mysql.cj.protocol.a.NativeSocketConnection.connect(NativeSocketConnection.java:91)
+	at com.mysql.cj.NativeSession.connect(NativeSession.java:152)
+	at com.mysql.cj.jdbc.ConnectionImpl.connectOneTryOnly(ConnectionImpl.java:955)
+	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:825)
+	... 73 common frames omitted
+Caused by: java.net.ConnectException: Connection refused: connect
+	at java.net.DualStackPlainSocketImpl.waitForConnect(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketConnect(DualStackPlainSocketImpl.java:85)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:172)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:589)
+	at com.mysql.cj.protocol.StandardSocketFactory.connect(StandardSocketFactory.java:155)
+	at com.mysql.cj.protocol.a.NativeSocketConnection.connect(NativeSocketConnection.java:65)
+	... 76 common frames omitted
+2020-10-15 09:51:33,164 ERROR (BaseController.java:284)- 系统异常:Could not open JDBC Connection for transaction; nested exception is com.mysql.cj.jdbc.exceptions.CommunicationsException: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+org.springframework.transaction.CannotCreateTransactionException: Could not open JDBC Connection for transaction; nested exception is com.mysql.cj.jdbc.exceptions.CommunicationsException: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+	at org.springframework.jdbc.datasource.DataSourceTransactionManager.doBegin(DataSourceTransactionManager.java:305)
+	at org.springframework.transaction.support.AbstractPlatformTransactionManager.getTransaction(AbstractPlatformTransactionManager.java:378)
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.createTransactionIfNecessary(TransactionAspectSupport.java:474)
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:289)
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:98)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:688)
+	at com.bdqn.service.impl.UserServiceImpl$$EnhancerBySpringCGLIB$$e104a8d6.userLogin(<generated>)
+	at com.bdqn.controller.UserController.userLogin(UserController.java:21)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:189)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:138)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:102)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:800)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1038)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:942)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1005)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:908)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:660)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:882)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:92)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:200)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:200)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:490)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:408)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:834)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1415)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: com.mysql.cj.jdbc.exceptions.CommunicationsException: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+	at com.mysql.cj.jdbc.exceptions.SQLError.createCommunicationsException(SQLError.java:174)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:64)
+	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:835)
+	at com.mysql.cj.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:455)
+	at com.mysql.cj.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:240)
+	at com.mysql.cj.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:199)
+	at com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:136)
+	at com.zaxxer.hikari.pool.PoolBase.newConnection(PoolBase.java:369)
+	at com.zaxxer.hikari.pool.PoolBase.newPoolEntry(PoolBase.java:198)
+	at com.zaxxer.hikari.pool.HikariPool.createPoolEntry(HikariPool.java:467)
+	at com.zaxxer.hikari.pool.HikariPool.checkFailFast(HikariPool.java:541)
+	at com.zaxxer.hikari.pool.HikariPool.<init>(HikariPool.java:115)
+	at com.zaxxer.hikari.HikariDataSource.getConnection(HikariDataSource.java:112)
+	at org.springframework.jdbc.datasource.DataSourceTransactionManager.doBegin(DataSourceTransactionManager.java:262)
+	... 62 common frames omitted
+Caused by: com.mysql.cj.exceptions.CJCommunicationsException: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:61)
+	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:105)
+	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:151)
+	at com.mysql.cj.exceptions.ExceptionFactory.createCommunicationsException(ExceptionFactory.java:167)
+	at com.mysql.cj.protocol.a.NativeSocketConnection.connect(NativeSocketConnection.java:91)
+	at com.mysql.cj.NativeSession.connect(NativeSession.java:152)
+	at com.mysql.cj.jdbc.ConnectionImpl.connectOneTryOnly(ConnectionImpl.java:955)
+	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:825)
+	... 73 common frames omitted
+Caused by: java.net.ConnectException: Connection refused: connect
+	at java.net.DualStackPlainSocketImpl.waitForConnect(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketConnect(DualStackPlainSocketImpl.java:85)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:172)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:589)
+	at com.mysql.cj.protocol.StandardSocketFactory.connect(StandardSocketFactory.java:155)
+	at com.mysql.cj.protocol.a.NativeSocketConnection.connect(NativeSocketConnection.java:65)
+	... 76 common frames omitted
+2020-10-15 09:51:38,180 ERROR (BaseController.java:284)- 系统异常:Could not open JDBC Connection for transaction; nested exception is com.mysql.cj.jdbc.exceptions.CommunicationsException: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+org.springframework.transaction.CannotCreateTransactionException: Could not open JDBC Connection for transaction; nested exception is com.mysql.cj.jdbc.exceptions.CommunicationsException: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+	at org.springframework.jdbc.datasource.DataSourceTransactionManager.doBegin(DataSourceTransactionManager.java:305)
+	at org.springframework.transaction.support.AbstractPlatformTransactionManager.getTransaction(AbstractPlatformTransactionManager.java:378)
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.createTransactionIfNecessary(TransactionAspectSupport.java:474)
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:289)
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:98)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:688)
+	at com.bdqn.service.impl.UserServiceImpl$$EnhancerBySpringCGLIB$$e104a8d6.userLogin(<generated>)
+	at com.bdqn.controller.UserController.userLogin(UserController.java:21)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:189)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:138)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:102)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:800)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1038)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:942)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1005)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:908)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:660)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:882)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:92)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:200)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:200)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:490)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:408)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:834)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1415)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: com.mysql.cj.jdbc.exceptions.CommunicationsException: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+	at com.mysql.cj.jdbc.exceptions.SQLError.createCommunicationsException(SQLError.java:174)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:64)
+	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:835)
+	at com.mysql.cj.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:455)
+	at com.mysql.cj.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:240)
+	at com.mysql.cj.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:199)
+	at com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:136)
+	at com.zaxxer.hikari.pool.PoolBase.newConnection(PoolBase.java:369)
+	at com.zaxxer.hikari.pool.PoolBase.newPoolEntry(PoolBase.java:198)
+	at com.zaxxer.hikari.pool.HikariPool.createPoolEntry(HikariPool.java:467)
+	at com.zaxxer.hikari.pool.HikariPool.checkFailFast(HikariPool.java:541)
+	at com.zaxxer.hikari.pool.HikariPool.<init>(HikariPool.java:115)
+	at com.zaxxer.hikari.HikariDataSource.getConnection(HikariDataSource.java:112)
+	at org.springframework.jdbc.datasource.DataSourceTransactionManager.doBegin(DataSourceTransactionManager.java:262)
+	... 62 common frames omitted
+Caused by: com.mysql.cj.exceptions.CJCommunicationsException: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:61)
+	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:105)
+	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:151)
+	at com.mysql.cj.exceptions.ExceptionFactory.createCommunicationsException(ExceptionFactory.java:167)
+	at com.mysql.cj.protocol.a.NativeSocketConnection.connect(NativeSocketConnection.java:91)
+	at com.mysql.cj.NativeSession.connect(NativeSession.java:152)
+	at com.mysql.cj.jdbc.ConnectionImpl.connectOneTryOnly(ConnectionImpl.java:955)
+	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:825)
+	... 73 common frames omitted
+Caused by: java.net.ConnectException: Connection refused: connect
+	at java.net.DualStackPlainSocketImpl.waitForConnect(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketConnect(DualStackPlainSocketImpl.java:85)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:172)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:589)
+	at com.mysql.cj.protocol.StandardSocketFactory.connect(StandardSocketFactory.java:155)
+	at com.mysql.cj.protocol.a.NativeSocketConnection.connect(NativeSocketConnection.java:65)
+	... 76 common frames omitted
+2020-10-15 09:51:43,195 ERROR (BaseController.java:284)- 系统异常:Could not open JDBC Connection for transaction; nested exception is com.mysql.cj.jdbc.exceptions.CommunicationsException: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+org.springframework.transaction.CannotCreateTransactionException: Could not open JDBC Connection for transaction; nested exception is com.mysql.cj.jdbc.exceptions.CommunicationsException: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+	at org.springframework.jdbc.datasource.DataSourceTransactionManager.doBegin(DataSourceTransactionManager.java:305)
+	at org.springframework.transaction.support.AbstractPlatformTransactionManager.getTransaction(AbstractPlatformTransactionManager.java:378)
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.createTransactionIfNecessary(TransactionAspectSupport.java:474)
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:289)
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:98)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:688)
+	at com.bdqn.service.impl.MenuServiceImpl$$EnhancerBySpringCGLIB$$68ecb21a.shu(<generated>)
+	at com.bdqn.controller.MenuController.shu(MenuController.java:63)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:189)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:138)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:102)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:800)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1038)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:942)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1005)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:908)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:660)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:882)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:92)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:200)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:200)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:490)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:408)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:834)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1415)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: com.mysql.cj.jdbc.exceptions.CommunicationsException: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+	at com.mysql.cj.jdbc.exceptions.SQLError.createCommunicationsException(SQLError.java:174)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:64)
+	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:835)
+	at com.mysql.cj.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:455)
+	at com.mysql.cj.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:240)
+	at com.mysql.cj.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:199)
+	at com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:136)
+	at com.zaxxer.hikari.pool.PoolBase.newConnection(PoolBase.java:369)
+	at com.zaxxer.hikari.pool.PoolBase.newPoolEntry(PoolBase.java:198)
+	at com.zaxxer.hikari.pool.HikariPool.createPoolEntry(HikariPool.java:467)
+	at com.zaxxer.hikari.pool.HikariPool.checkFailFast(HikariPool.java:541)
+	at com.zaxxer.hikari.pool.HikariPool.<init>(HikariPool.java:115)
+	at com.zaxxer.hikari.HikariDataSource.getConnection(HikariDataSource.java:112)
+	at org.springframework.jdbc.datasource.DataSourceTransactionManager.doBegin(DataSourceTransactionManager.java:262)
+	... 62 common frames omitted
+Caused by: com.mysql.cj.exceptions.CJCommunicationsException: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:61)
+	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:105)
+	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:151)
+	at com.mysql.cj.exceptions.ExceptionFactory.createCommunicationsException(ExceptionFactory.java:167)
+	at com.mysql.cj.protocol.a.NativeSocketConnection.connect(NativeSocketConnection.java:91)
+	at com.mysql.cj.NativeSession.connect(NativeSession.java:152)
+	at com.mysql.cj.jdbc.ConnectionImpl.connectOneTryOnly(ConnectionImpl.java:955)
+	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:825)
+	... 73 common frames omitted
+Caused by: java.net.ConnectException: Connection refused: connect
+	at java.net.DualStackPlainSocketImpl.waitForConnect(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketConnect(DualStackPlainSocketImpl.java:85)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:172)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:589)
+	at com.mysql.cj.protocol.StandardSocketFactory.connect(StandardSocketFactory.java:155)
+	at com.mysql.cj.protocol.a.NativeSocketConnection.connect(NativeSocketConnection.java:65)
+	... 76 common frames omitted
+2020-10-15 09:52:31,832 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT u.*,ur.rid FROM USER u,userrole ur WHERE u.userid=ur.uid AND userCode=? and userPwd=? 
+2020-10-15 09:52:31,851 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: admin(String), 123456(String)
+2020-10-15 09:52:31,886 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2020-10-15 09:52:32,109 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT m.* FROM menu AS m,rolemenu AS rm WHERE m.mid=rm.mid AND rm.roleid=? AND m.pid IS NULL 
+2020-10-15 09:52:32,111 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 1(Integer)
+2020-10-15 09:52:32,127 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 6
+2020-10-15 09:52:32,148 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT m2.* FROM menu m1,menu m2 WHERE m1.mid=m2.pid AND m2.pid=? 
+2020-10-15 09:52:32,148 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 1(Integer)
+2020-10-15 09:52:32,153 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2020-10-15 09:52:32,157 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT m2.* FROM menu m1,menu m2 WHERE m1.mid=m2.pid AND m2.pid=? 
+2020-10-15 09:52:32,157 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 4(Integer)
+2020-10-15 09:52:32,157 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 2
+2020-10-15 09:52:32,161 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT m2.* FROM menu m1,menu m2 WHERE m1.mid=m2.pid AND m2.pid=? 
+2020-10-15 09:52:32,161 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 5(Integer)
+2020-10-15 09:52:32,162 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 3
+2020-10-15 09:52:32,167 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT m2.* FROM menu m1,menu m2 WHERE m1.mid=m2.pid AND m2.pid=? 
+2020-10-15 09:52:32,167 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 6(Integer)
+2020-10-15 09:52:32,168 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 3
+2020-10-15 09:52:32,172 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT m2.* FROM menu m1,menu m2 WHERE m1.mid=m2.pid AND m2.pid=? 
+2020-10-15 09:52:32,172 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 9(Integer)
+2020-10-15 09:52:32,176 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 3
+2020-10-15 09:52:32,180 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT m2.* FROM menu m1,menu m2 WHERE m1.mid=m2.pid AND m2.pid=? 
+2020-10-15 09:52:32,180 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 7(Integer)
+2020-10-15 09:52:32,182 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 3
+2020-10-15 09:52:35,761 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select * from department 
+2020-10-15 09:52:35,762 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
+2020-10-15 09:52:35,769 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 7
+2020-10-15 09:52:35,776 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select * from department 
+2020-10-15 09:52:35,777 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
+2020-10-15 09:52:35,779 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 7
+2020-10-15 09:52:35,858 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT u.*,d.dName,ud.udid,d.did as did FROM `userdeparment` ud,`user` u,`department` d WHERE ud.uid=u.userid AND ud.did=d.did order by userid desc 
+2020-10-15 09:52:35,858 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
+2020-10-15 09:52:35,868 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 11
+2020-10-15 09:52:37,056 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT m.*,u.userName FROM mishu AS m,USER AS u WHERE m.`userId`=u.`userid` AND reject = 0 AND submission = 1 and m.state in (1,2) ORDER BY msId DESC 
+2020-10-15 09:52:37,057 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
+2020-10-15 09:52:37,065 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 6
+2020-10-15 09:52:37,974 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT count(*) FROM mishu WHERE submission = 0 and reject = 0 and state in (1,2) 
+2020-10-15 09:52:37,976 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT m.*,u.userName FROM mishu AS m,USER AS u WHERE m.`userId`=u.`userid` ORDER BY msId DESC 
+2020-10-15 09:52:37,976 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
+2020-10-15 09:52:37,977 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
+2020-10-15 09:52:37,979 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT count(*) FROM mishu WHERE reject = 1 and submission = 0 and state in (1,2) 
+2020-10-15 09:52:37,980 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
+2020-10-15 09:52:37,981 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT count(*) FROM mishu WHERE submission = 0 and reject = 0 and state in (1,2) 
+2020-10-15 09:52:37,982 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2020-10-15 09:52:37,982 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
+2020-10-15 09:52:37,983 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT count(*) FROM mishu WHERE reject = 1 and submission = 0 and state in (1,2) 
+2020-10-15 09:52:37,983 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
+2020-10-15 09:52:37,988 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2020-10-15 09:52:37,992 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2020-10-15 09:52:37,992 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2020-10-15 09:52:38,002 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 14
+2020-10-15 09:52:40,648 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT d.*,u.userName FROM designated AS d,USER AS u WHERE u.`userId`=d.`userid` ORDER BY dgId DESC 
+2020-10-15 09:52:40,649 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
+2020-10-15 09:52:40,656 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 7
+2020-10-15 09:52:41,230 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT d.*,u.userName FROM designated AS d,USER AS u WHERE u.`userId`=d.`userid` AND approval=1 AND submission = 1 and d.state in (1,2) ORDER BY dgId DESC 
+2020-10-15 09:52:41,230 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
+2020-10-15 09:52:41,232 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 3
+2020-10-15 09:52:41,777 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT d.*,u.userName FROM designated AS d,USER AS u WHERE u.`userId`=d.`userid` AND reject = 0 AND submission = 1 and d.state = 1 ORDER BY dgId DESC 
+2020-10-15 09:52:41,778 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
+2020-10-15 09:52:41,779 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 0
+2020-10-15 09:52:44,351 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT count(*) FROM mishu WHERE reject = 1 and submission = 0 and state in (1,2) 
+2020-10-15 09:52:44,351 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
+2020-10-15 09:52:44,353 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2020-10-15 09:52:44,363 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT m.*,u.userName FROM mishu AS m,USER AS u WHERE m.`userId`=u.`userid` and submission = 0 and reject = 1 and m.state in (1,2) ORDER BY msId DESC 
+2020-10-15 09:52:44,364 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
+2020-10-15 09:52:44,365 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 3
+2020-10-15 09:52:45,661 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT count(*) FROM mishu WHERE reject = 1 and submission = 0 and state in (1,2) 
+2020-10-15 09:52:45,662 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
+2020-10-15 09:52:45,663 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2020-10-15 09:52:45,674 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT m.*,u.userName FROM mishu AS m,USER AS u WHERE m.`userId`=u.`userid` and submission = 0 and reject = 1 and m.state in (1,2) ORDER BY msId DESC 
+2020-10-15 09:52:45,675 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
+2020-10-15 09:52:45,680 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 3
+2020-10-15 09:52:45,953 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT count(*) FROM mishu WHERE reject = 1 and submission = 0 and state in (1,2) 
+2020-10-15 09:52:45,953 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
+2020-10-15 09:52:45,954 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2020-10-15 09:52:45,966 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT m.*,u.userName FROM mishu AS m,USER AS u WHERE m.`userId`=u.`userid` and submission = 0 and reject = 1 and m.state in (1,2) ORDER BY msId DESC 
+2020-10-15 09:52:45,967 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
+2020-10-15 09:52:45,972 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 3
+2020-10-15 09:52:46,092 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT count(*) FROM mishu WHERE reject = 1 and submission = 0 and state in (1,2) 
+2020-10-15 09:52:46,093 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
+2020-10-15 09:52:46,094 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2020-10-15 09:52:46,103 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT m.*,u.userName FROM mishu AS m,USER AS u WHERE m.`userId`=u.`userid` and submission = 0 and reject = 1 and m.state in (1,2) ORDER BY msId DESC 
+2020-10-15 09:52:46,103 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
+2020-10-15 09:52:46,104 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 3
+2020-10-15 09:52:46,593 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT count(*) FROM mishu WHERE submission = 0 and reject = 0 and state in (1,2) 
+2020-10-15 09:52:46,594 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
+2020-10-15 09:52:46,594 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2020-10-15 09:52:46,603 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT m.*,u.userName FROM mishu AS m,USER AS u WHERE m.`userId`=u.`userid` and submission = 0 and reject = 0 and m.state in (1,2) ORDER BY msId DESC 
+2020-10-15 09:52:46,603 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
+2020-10-15 09:52:46,604 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 3
+2020-10-15 09:52:47,254 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT count(*) FROM mishu WHERE submission = 0 and reject = 0 and state in (1,2) 
+2020-10-15 09:52:47,254 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
+2020-10-15 09:52:47,256 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2020-10-15 09:52:47,265 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT m.*,u.userName FROM mishu AS m,USER AS u WHERE m.`userId`=u.`userid` and submission = 0 and reject = 0 and m.state in (1,2) ORDER BY msId DESC 
+2020-10-15 09:52:47,266 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
+2020-10-15 09:52:47,267 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 3
+2020-10-15 09:52:47,758 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT count(*) FROM mishu WHERE reject = 1 and submission = 0 and state in (1,2) 
+2020-10-15 09:52:47,758 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
+2020-10-15 09:52:47,759 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2020-10-15 09:52:47,770 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT m.*,u.userName FROM mishu AS m,USER AS u WHERE m.`userId`=u.`userid` and submission = 0 and reject = 1 and m.state in (1,2) ORDER BY msId DESC 
+2020-10-15 09:52:47,771 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
+2020-10-15 09:52:47,773 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 3
+2020-10-15 09:52:48,367 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT count(*) FROM mishu WHERE submission = 0 and reject = 0 and state in (1,2) 
+2020-10-15 09:52:48,367 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
+2020-10-15 09:52:48,368 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2020-10-15 09:52:48,379 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT m.*,u.userName FROM mishu AS m,USER AS u WHERE m.`userId`=u.`userid` and submission = 0 and reject = 0 and m.state in (1,2) ORDER BY msId DESC 
+2020-10-15 09:52:48,380 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
+2020-10-15 09:52:48,381 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 3
+2020-10-15 09:53:03,716 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT count(*) FROM newcar WHERE receive = 0 and approval = 1 
+2020-10-15 09:53:03,716 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT count(*) FROM newcar WHERE state= 3 
+2020-10-15 09:53:03,716 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
+2020-10-15 09:53:03,716 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
+2020-10-15 09:53:03,718 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT nw.*,u.userName FROM newcar AS nw,USER AS u WHERE nw.`userId`=u.`userid` AND approval=1 AND submission = 1 and receive = 1 and nw.state in (1,2) ORDER BY ncId DESC 
+2020-10-15 09:53:03,718 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
+2020-10-15 09:53:03,727 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2020-10-15 09:53:03,727 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2020-10-15 09:53:03,727 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2020-10-15 09:53:04,668 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT nw.*,u.userName FROM newcar AS nw,USER AS u WHERE nw.`userId`=u.`userid` AND reject = 0 AND submission = 1 and nw.state = 1 ORDER BY ncId DESC 
+2020-10-15 09:53:04,669 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
+2020-10-15 09:53:04,670 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 2
+2020-10-15 09:53:07,273 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT count(*) FROM newcar WHERE submission = 0 and reject = 0 and state = 1 
+2020-10-15 09:53:07,275 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
+2020-10-15 09:53:07,276 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT nw.*,u.userName FROM newcar AS nw,USER AS u WHERE nw.`userId`=u.`userid` ORDER BY ncId DESC 
+2020-10-15 09:53:07,276 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
+2020-10-15 09:53:07,276 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2020-10-15 09:53:07,277 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT count(*) FROM newcar WHERE reject = 1 and submission = 0 and state =1 
+2020-10-15 09:53:07,278 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
+2020-10-15 09:53:07,279 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2020-10-15 09:53:07,279 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 10
+2020-10-15 09:55:35,417 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT count(*) FROM substitutevehicle WHERE submission = 0 and reject = 0 and state in (1,2) 
+2020-10-15 09:55:35,417 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT count(*) FROM substitutevehicle WHERE submission = 0 and reject = 1 and state in (1,2) 
+2020-10-15 09:55:35,418 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
+2020-10-15 09:55:35,419 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT m.*,u.userName FROM substitutevehicle AS m,USER AS u WHERE m.`userId`=u.`userid` ORDER BY msId DESC 
+2020-10-15 09:55:35,418 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
+2020-10-15 09:55:35,419 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
+2020-10-15 09:55:35,432 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2020-10-15 09:55:35,432 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2020-10-15 09:55:35,434 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 12
+2020-10-15 09:55:36,676 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT count(*) FROM substitutevehicle WHERE state= 3 
+2020-10-15 09:55:36,677 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
+2020-10-15 09:55:36,697 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT nw.*,u.userName FROM `substitutevehicle` AS nw,USER AS u WHERE nw.`userId`=u.`userid` AND approval=1 AND submission = 1 AND nw.state IN (1,2) ORDER BY msId DESC 
+2020-10-15 09:55:36,698 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
+2020-10-15 09:55:36,698 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2020-10-15 09:55:36,703 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 4
+2020-10-15 09:55:37,533 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT d.*,u.userName FROM designated AS d,USER AS u WHERE u.`userId`=d.`userid` ORDER BY dgId DESC 
+2020-10-15 09:55:37,535 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
+2020-10-15 09:55:37,547 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 7
+2020-10-15 09:55:38,312 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT d.*,u.userName FROM designated AS d,USER AS u WHERE u.`userId`=d.`userid` AND approval=1 AND submission = 1 and d.state in (1,2) ORDER BY dgId DESC 
+2020-10-15 09:55:38,313 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
+2020-10-15 09:55:38,321 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 3
+2020-10-15 09:55:39,137 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT d.*,u.userName FROM designated AS d,USER AS u WHERE u.`userId`=d.`userid` AND reject = 0 AND submission = 1 and d.state = 1 ORDER BY dgId DESC 
+2020-10-15 09:55:39,138 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
+2020-10-15 09:55:39,139 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 0
+2020-10-15 09:55:39,973 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT m.*,u.userName FROM mishu AS m,USER AS u WHERE m.`userId`=u.`userid` AND reject = 0 AND submission = 1 and m.state in (1,2) ORDER BY msId DESC 
+2020-10-15 09:55:39,974 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
+2020-10-15 09:55:39,975 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 6
+2020-10-15 09:55:40,713 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT m.*,u.userName FROM mishu AS m,USER AS u WHERE m.`userId`=u.`userid` ORDER BY msId DESC 
+2020-10-15 09:55:40,714 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
+2020-10-15 09:55:40,714 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT count(*) FROM mishu WHERE submission = 0 and reject = 0 and state in (1,2) 
+2020-10-15 09:55:40,714 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
+2020-10-15 09:55:40,726 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2020-10-15 09:55:40,725 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT count(*) FROM mishu WHERE reject = 1 and submission = 0 and state in (1,2) 
+2020-10-15 09:55:40,726 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 14
+2020-10-15 09:55:40,726 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
+2020-10-15 09:55:40,728 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2020-10-15 09:55:40,728 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT count(*) FROM mishu WHERE submission = 0 and reject = 0 and state in (1,2) 
+2020-10-15 09:55:40,729 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
+2020-10-15 09:55:40,732 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2020-10-15 09:55:40,733 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT count(*) FROM mishu WHERE reject = 1 and submission = 0 and state in (1,2) 
+2020-10-15 09:55:40,733 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
+2020-10-15 09:55:40,734 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2020-10-15 09:55:48,182 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT count(*) FROM mishu WHERE submission = 0 and reject = 0 and state in (1,2) 
+2020-10-15 09:55:48,182 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
+2020-10-15 09:55:48,183 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2020-10-15 09:55:48,194 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT m.*,u.userName FROM mishu AS m,USER AS u WHERE m.`userId`=u.`userid` and submission = 0 and reject = 0 and m.state in (1,2) ORDER BY msId DESC 
+2020-10-15 09:55:48,194 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
+2020-10-15 09:55:48,195 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 3
+2020-10-15 09:55:52,637 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT count(*) FROM mishu WHERE reject = 1 and submission = 0 and state in (1,2) 
+2020-10-15 09:55:52,637 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
+2020-10-15 09:55:52,638 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2020-10-15 09:55:52,649 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT m.*,u.userName FROM mishu AS m,USER AS u WHERE m.`userId`=u.`userid` and submission = 0 and reject = 1 and m.state in (1,2) ORDER BY msId DESC 
+2020-10-15 09:55:52,649 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
+2020-10-15 09:55:52,650 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 3
+2020-10-15 09:59:12,239 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT count(*) FROM mishu WHERE submission = 0 and reject = 0 and state in (1,2) 
+2020-10-15 09:59:12,241 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
+2020-10-15 09:59:12,243 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2020-10-15 09:59:12,256 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT m.*,u.userName FROM mishu AS m,USER AS u WHERE m.`userId`=u.`userid` and submission = 0 and reject = 0 and m.state in (1,2) ORDER BY msId DESC 
+2020-10-15 09:59:12,256 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
+2020-10-15 09:59:12,258 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 3
+2020-10-15 09:59:13,465 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select * from mishu where msId=? 
+2020-10-15 09:59:13,466 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 3(Integer)
+2020-10-15 09:59:13,467 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2020-10-15 09:59:16,860 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select * from mishu where msId=? 
+2020-10-15 09:59:16,861 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 3(Integer)
+2020-10-15 09:59:16,863 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2020-10-15 09:59:23,803 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select * from department 
+2020-10-15 09:59:23,804 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
+2020-10-15 09:59:23,806 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 7
+2020-10-15 09:59:23,817 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select * from department 
+2020-10-15 09:59:23,817 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
+2020-10-15 09:59:23,819 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 7
+2020-10-15 09:59:23,884 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT u.*,d.dName,ud.udid,d.did as did FROM `userdeparment` ud,`user` u,`department` d WHERE ud.uid=u.userid AND ud.did=d.did order by userid desc 
+2020-10-15 09:59:23,885 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
+2020-10-15 09:59:23,900 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 11
+2020-10-15 09:59:26,319 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT m.*,u.userName FROM mishu AS m,USER AS u WHERE m.`userId`=u.`userid` ORDER BY msId DESC 
+2020-10-15 09:59:26,320 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
+2020-10-15 09:59:26,323 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 14
+2020-10-15 09:59:26,325 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT count(*) FROM mishu WHERE reject = 1 and submission = 0 and state in (1,2) 
+2020-10-15 09:59:26,325 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT count(*) FROM mishu WHERE reject = 1 and submission = 0 and state in (1,2) 
+2020-10-15 09:59:26,325 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT count(*) FROM mishu WHERE submission = 0 and reject = 0 and state in (1,2) 
+2020-10-15 09:59:26,325 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT count(*) FROM mishu WHERE submission = 0 and reject = 0 and state in (1,2) 
+2020-10-15 09:59:26,326 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
+2020-10-15 09:59:26,326 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
+2020-10-15 09:59:26,326 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
+2020-10-15 09:59:26,326 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
+2020-10-15 09:59:26,328 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2020-10-15 09:59:26,328 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2020-10-15 09:59:26,328 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2020-10-15 09:59:26,328 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2020-10-15 10:08:11,270 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select * from mishu where msId=? 
+2020-10-15 10:08:11,271 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 12(Integer)
+2020-10-15 10:08:11,273 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2020-10-15 10:09:10,502 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT count(*) FROM mishu WHERE reject = 1 and submission = 0 and state in (1,2) 
+2020-10-15 10:09:10,502 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT m.*,u.userName FROM mishu AS m,USER AS u WHERE m.`userId`=u.`userid` ORDER BY msId DESC 
+2020-10-15 10:09:10,502 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT count(*) FROM mishu WHERE submission = 0 and reject = 0 and state in (1,2) 
+2020-10-15 10:09:10,503 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
+2020-10-15 10:09:10,503 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
+2020-10-15 10:09:10,503 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
+2020-10-15 10:09:10,506 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2020-10-15 10:09:10,506 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2020-10-15 10:09:10,506 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 14
+2020-10-15 10:09:12,167 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT count(*) FROM mishu WHERE reject = 1 and submission = 0 and state in (1,2) 
+2020-10-15 10:09:12,166 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT count(*) FROM mishu WHERE submission = 0 and reject = 0 and state in (1,2) 
+2020-10-15 10:09:12,167 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
+2020-10-15 10:09:12,167 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
+2020-10-15 10:09:12,169 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2020-10-15 10:09:12,169 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2020-10-15 10:09:12,170 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT m.*,u.userName FROM mishu AS m,USER AS u WHERE m.`userId`=u.`userid` AND m.state=? ORDER BY msId DESC 
+2020-10-15 10:09:12,170 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 0(Integer)
+2020-10-15 10:09:12,172 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 2
+2020-10-15 10:09:15,255 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT count(*) FROM mishu WHERE submission = 0 and reject = 0 and state in (1,2) 
+2020-10-15 10:09:15,257 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT m.*,u.userName FROM mishu AS m,USER AS u WHERE m.`userId`=u.`userid` ORDER BY msId DESC 
+2020-10-15 10:09:15,256 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
+2020-10-15 10:09:15,257 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
+2020-10-15 10:09:15,257 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT count(*) FROM mishu WHERE reject = 1 and submission = 0 and state in (1,2) 
+2020-10-15 10:09:15,258 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
+2020-10-15 10:09:15,258 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2020-10-15 10:09:15,258 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2020-10-15 10:09:15,259 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 14
+2020-10-15 10:09:19,649 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT count(*) FROM mishu WHERE submission = 0 and reject = 0 and state in (1,2) 
+2020-10-15 10:09:19,649 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT m.*,u.userName FROM mishu AS m,USER AS u WHERE m.`userId`=u.`userid` AND threeInOne=? ORDER BY msId DESC 
+2020-10-15 10:09:19,649 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT count(*) FROM mishu WHERE reject = 1 and submission = 0 and state in (1,2) 
+2020-10-15 10:09:19,649 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 1(Integer)
+2020-10-15 10:09:19,649 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
+2020-10-15 10:09:19,650 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
+2020-10-15 10:09:19,651 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2020-10-15 10:09:19,651 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 5
+2020-10-15 10:09:19,651 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2020-10-15 10:09:21,318 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT count(*) FROM mishu WHERE submission = 0 and reject = 0 and state in (1,2) 
+2020-10-15 10:09:21,318 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT count(*) FROM mishu WHERE reject = 1 and submission = 0 and state in (1,2) 
+2020-10-15 10:09:21,319 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT m.*,u.userName FROM mishu AS m,USER AS u WHERE m.`userId`=u.`userid` ORDER BY msId DESC 
+2020-10-15 10:09:21,319 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
+2020-10-15 10:09:21,319 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
+2020-10-15 10:09:21,319 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
+2020-10-15 10:09:21,320 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2020-10-15 10:09:21,320 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2020-10-15 10:09:21,321 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 14
+2020-10-15 10:09:23,228 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT count(*) FROM mishu WHERE reject = 1 and submission = 0 and state in (1,2) 
+2020-10-15 10:09:23,228 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT count(*) FROM mishu WHERE submission = 0 and reject = 0 and state in (1,2) 
+2020-10-15 10:09:23,228 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT m.*,u.userName FROM mishu AS m,USER AS u WHERE m.`userId`=u.`userid` ORDER BY msId DESC 
+2020-10-15 10:09:23,228 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
+2020-10-15 10:09:23,228 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
+2020-10-15 10:09:23,228 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
+2020-10-15 10:09:23,229 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2020-10-15 10:09:23,229 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2020-10-15 10:09:23,230 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 14
+2020-10-15 10:09:23,562 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT count(*) FROM mishu WHERE reject = 1 and submission = 0 and state in (1,2) 
+2020-10-15 10:09:23,563 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
+2020-10-15 10:09:23,563 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT count(*) FROM mishu WHERE submission = 0 and reject = 0 and state in (1,2) 
+2020-10-15 10:09:23,563 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT m.*,u.userName FROM mishu AS m,USER AS u WHERE m.`userId`=u.`userid` ORDER BY msId DESC 
+2020-10-15 10:09:23,563 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
+2020-10-15 10:09:23,563 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
+2020-10-15 10:09:23,564 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2020-10-15 10:09:23,564 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2020-10-15 10:09:23,565 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 14
+2020-10-15 10:09:23,869 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT count(*) FROM mishu WHERE submission = 0 and reject = 0 and state in (1,2) 
+2020-10-15 10:09:23,869 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
+2020-10-15 10:09:23,870 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT m.*,u.userName FROM mishu AS m,USER AS u WHERE m.`userId`=u.`userid` ORDER BY msId DESC 
+2020-10-15 10:09:23,870 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT count(*) FROM mishu WHERE reject = 1 and submission = 0 and state in (1,2) 
+2020-10-15 10:09:23,870 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
+2020-10-15 10:09:23,870 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2020-10-15 10:09:23,870 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
+2020-10-15 10:09:23,872 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2020-10-15 10:09:23,872 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 14
+2020-10-15 10:29:50,429 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select * from mishu where msId=? 
+2020-10-15 10:29:50,430 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 13(Integer)
+2020-10-15 10:29:50,438 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2020-10-15 10:30:00,228 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT count(*) FROM mishu WHERE reject = 1 and submission = 0 and state in (1,2) 
+2020-10-15 10:30:00,228 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT count(*) FROM mishu WHERE submission = 0 and reject = 0 and state in (1,2) 
+2020-10-15 10:30:00,229 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
+2020-10-15 10:30:00,229 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT m.*,u.userName FROM mishu AS m,USER AS u WHERE m.`userId`=u.`userid` ORDER BY msId DESC 
+2020-10-15 10:30:00,229 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
+2020-10-15 10:30:00,229 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
+2020-10-15 10:30:00,231 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2020-10-15 10:30:00,238 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2020-10-15 10:30:00,245 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 14
+2020-10-15 10:30:00,962 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT count(*) FROM mishu WHERE submission = 0 and reject = 0 and state in (1,2) 
+2020-10-15 10:30:00,962 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT m.*,u.userName FROM mishu AS m,USER AS u WHERE m.`userId`=u.`userid` ORDER BY msId DESC 
+2020-10-15 10:30:00,962 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
+2020-10-15 10:30:00,963 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
+2020-10-15 10:30:00,963 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT count(*) FROM mishu WHERE reject = 1 and submission = 0 and state in (1,2) 
+2020-10-15 10:30:00,963 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
+2020-10-15 10:30:00,964 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2020-10-15 10:30:00,964 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2020-10-15 10:30:00,971 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 14
+2020-10-15 10:30:04,438 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT count(*) FROM mishu WHERE reject = 1 and submission = 0 and state in (1,2) 
+2020-10-15 10:30:04,438 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT count(*) FROM mishu WHERE submission = 0 and reject = 0 and state in (1,2) 
+2020-10-15 10:30:04,439 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT m.*,u.userName FROM mishu AS m,USER AS u WHERE m.`userId`=u.`userid` ORDER BY msId DESC 
+2020-10-15 10:30:04,439 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
+2020-10-15 10:30:04,439 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
+2020-10-15 10:30:04,439 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
+2020-10-15 10:30:04,441 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2020-10-15 10:30:04,441 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2020-10-15 10:30:04,447 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 14
+2020-10-15 10:30:06,037 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT count(*) FROM mishu WHERE submission = 0 and reject = 0 and state in (1,2) 
+2020-10-15 10:30:06,037 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT m.*,u.userName FROM mishu AS m,USER AS u WHERE m.`userId`=u.`userid` ORDER BY msId DESC 
+2020-10-15 10:30:06,037 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT count(*) FROM mishu WHERE reject = 1 and submission = 0 and state in (1,2) 
+2020-10-15 10:30:06,038 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
+2020-10-15 10:30:06,038 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
+2020-10-15 10:30:06,038 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
+2020-10-15 10:30:06,041 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2020-10-15 10:30:06,041 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2020-10-15 10:30:06,041 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 14
+2020-10-15 10:30:09,871 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT count(*) FROM mishu WHERE submission = 0 and reject = 0 and state in (1,2) 
+2020-10-15 10:30:09,871 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT m.*,u.userName FROM mishu AS m,USER AS u WHERE m.`userId`=u.`userid` ORDER BY msId DESC 
+2020-10-15 10:30:09,872 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
+2020-10-15 10:30:09,872 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
+2020-10-15 10:30:09,872 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT count(*) FROM mishu WHERE reject = 1 and submission = 0 and state in (1,2) 
+2020-10-15 10:30:09,873 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
+2020-10-15 10:30:09,873 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2020-10-15 10:30:09,873 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2020-10-15 10:30:09,874 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 14
+2020-10-15 13:45:31,642 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT m.*,u.userName FROM mishu AS m,USER AS u WHERE m.`userId`=u.`userid` AND reject = 0 AND submission = 1 and m.state in (1,2) ORDER BY msId DESC 
+2020-10-15 13:45:31,652 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
+2020-10-15 13:45:31,693 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 6
+2020-10-15 13:45:40,441 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select * from department 
+2020-10-15 13:45:40,442 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
+2020-10-15 13:45:40,452 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 7
+2020-10-15 13:45:40,459 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select * from department 
+2020-10-15 13:45:40,459 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
+2020-10-15 13:45:40,465 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 7
+2020-10-15 13:45:40,532 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT u.*,d.dName,ud.udid,d.did as did FROM `userdeparment` ud,`user` u,`department` d WHERE ud.uid=u.userid AND ud.did=d.did order by userid desc 
+2020-10-15 13:45:40,533 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
+2020-10-15 13:45:40,547 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 11
+2020-10-15 13:54:11,180 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT u.*,d.dName,ud.udid,d.did FROM `userdeparment` ud,`user` u,`department` d WHERE ud.uid=u.userid AND ud.did=d.did and userCode = ? 
+2020-10-15 13:54:11,183 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: admins(String)
+2020-10-15 13:54:11,193 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2020-10-15 13:54:11,213 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT * FROM user WHERE userCode = ? 
+2020-10-15 13:54:11,213 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: admins(String)
+2020-10-15 13:54:11,214 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2020-10-15 13:55:38,384 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT u.*,d.dName,ud.udid,d.did FROM `userdeparment` ud,`user` u,`department` d WHERE ud.uid=u.userid AND ud.did=d.did and userCode = ? 
+2020-10-15 13:55:38,385 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: admins(String)
+2020-10-15 13:55:38,387 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2020-10-15 13:55:38,401 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT * FROM user WHERE userCode = ? 
+2020-10-15 13:55:38,403 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: admins(String)
+2020-10-15 13:55:38,403 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2020-10-15 13:56:12,977 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT * FROM user WHERE userCode = ? 
+2020-10-15 13:56:12,980 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: admins(String)
+2020-10-15 13:56:12,982 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT * FROM user WHERE userCode = ? 
+2020-10-15 13:56:12,982 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: admins(String)
+2020-10-15 13:56:12,998 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2020-10-15 13:56:12,998 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2020-10-15 13:56:14,176 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT * FROM user WHERE userCode = ? 
+2020-10-15 13:56:14,179 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: admins(String)
+2020-10-15 13:56:14,181 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2020-10-15 13:56:14,182 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT * FROM user WHERE userCode = ? 
+2020-10-15 13:56:14,182 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: admins(String)
+2020-10-15 13:56:14,183 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2020-10-15 13:56:14,283 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT * FROM user WHERE userCode = ? 
+2020-10-15 13:56:14,284 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT * FROM user WHERE userCode = ? 
+2020-10-15 13:56:14,284 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: admins(String)
+2020-10-15 13:56:14,284 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: admins(String)
+2020-10-15 13:56:14,286 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2020-10-15 13:56:14,286 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2020-10-15 13:56:14,479 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT * FROM user WHERE userCode = ? 
+2020-10-15 13:56:14,479 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: admins(String)
+2020-10-15 13:56:14,482 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2020-10-15 13:56:14,483 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT * FROM user WHERE userCode = ? 
+2020-10-15 13:56:14,485 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: admins(String)
+2020-10-15 13:56:14,486 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2020-10-15 13:56:14,629 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT * FROM user WHERE userCode = ? 
+2020-10-15 13:56:14,630 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: admins(String)
+2020-10-15 13:56:14,631 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT * FROM user WHERE userCode = ? 
+2020-10-15 13:56:14,631 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2020-10-15 13:56:14,633 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: admins(String)
+2020-10-15 13:56:14,634 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2020-10-15 13:56:23,627 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT u.*,d.dName,ud.udid,d.did FROM `userdeparment` ud,`user` u,`department` d WHERE ud.uid=u.userid AND ud.did=d.did and userCode = ? 
+2020-10-15 13:56:23,628 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: lijiawei(String)
+2020-10-15 13:56:23,637 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2020-10-15 13:56:23,651 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT * FROM user WHERE userCode = ? 
+2020-10-15 13:56:23,652 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: lijiawei(String)
+2020-10-15 13:56:23,653 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2020-10-15 13:56:27,038 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT u.*,d.dName,ud.udid,d.did FROM `userdeparment` ud,`user` u,`department` d WHERE ud.uid=u.userid AND ud.did=d.did and userCode = ? 
+2020-10-15 13:56:27,039 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: admins(String)
+2020-10-15 13:56:27,040 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2020-10-15 13:56:27,054 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT * FROM user WHERE userCode = ? 
+2020-10-15 13:56:27,055 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: admins(String)
+2020-10-15 13:56:27,055 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2020-10-15 14:14:21,397 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT u.*,d.dName,ud.udid,d.did FROM `userdeparment` ud,`user` u,`department` d WHERE ud.uid=u.userid AND ud.did=d.did and userCode = ? 
+2020-10-15 14:14:21,399 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 003(String)
+2020-10-15 14:14:21,401 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2020-10-15 14:14:21,419 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT * FROM user WHERE userCode = ? 
+2020-10-15 14:14:21,420 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 003(String)
+2020-10-15 14:14:21,421 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2020-10-15 15:10:33,679 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT u.*,d.dName,ud.udid,d.did FROM `userdeparment` ud,`user` u,`department` d WHERE ud.uid=u.userid AND ud.did=d.did and userCode = ? 
+2020-10-15 15:10:33,692 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 007(String)
+2020-10-15 15:10:33,724 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2020-10-15 15:10:33,822 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT * FROM user WHERE userCode = ? 
+2020-10-15 15:10:33,823 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 007(String)
+2020-10-15 15:10:33,825 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2020-10-15 15:11:53,903 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT count(*) FROM mishu WHERE submission = 0 and reject = 0 and state in (1,2) 
+2020-10-15 15:11:53,903 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT count(*) FROM mishu WHERE reject = 1 and submission = 0 and state in (1,2) 
+2020-10-15 15:11:53,903 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT count(*) FROM mishu WHERE submission = 0 and reject = 0 and state in (1,2) 
+2020-10-15 15:11:53,904 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
+2020-10-15 15:11:53,904 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
+2020-10-15 15:11:53,904 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
+2020-10-15 15:11:53,906 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT count(*) FROM mishu WHERE reject = 1 and submission = 0 and state in (1,2) 
+2020-10-15 15:11:53,907 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
+2020-10-15 15:11:53,914 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2020-10-15 15:11:53,916 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2020-10-15 15:11:53,919 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2020-10-15 15:11:53,920 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2020-10-15 15:11:53,967 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT m.*,u.userName FROM mishu AS m,USER AS u WHERE m.`userId`=u.`userid` ORDER BY msId DESC 
+2020-10-15 15:11:53,967 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
+2020-10-15 15:11:53,971 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 14
+2020-10-15 15:11:54,016 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT m.*,u.userName FROM mishu AS m,USER AS u WHERE m.`userId`=u.`userid` AND reject = 0 AND submission = 1 and m.state in (1,2) ORDER BY msId DESC 
+2020-10-15 15:11:54,017 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
+2020-10-15 15:11:54,024 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 6
+2020-10-15 15:12:04,458 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT m.* FROM menu AS m,rolemenu AS rm WHERE m.mid=rm.mid AND rm.roleid=? AND m.pid IS NULL 
+2020-10-15 15:12:04,459 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 1(Integer)
+2020-10-15 15:12:04,479 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 6
+2020-10-15 15:12:04,484 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT m2.* FROM menu m1,menu m2 WHERE m1.mid=m2.pid AND m2.pid=? 
+2020-10-15 15:12:04,484 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 1(Integer)
+2020-10-15 15:12:04,492 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2020-10-15 15:12:04,496 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT m2.* FROM menu m1,menu m2 WHERE m1.mid=m2.pid AND m2.pid=? 
+2020-10-15 15:12:04,496 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 4(Integer)
+2020-10-15 15:12:04,498 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 2
+2020-10-15 15:12:04,502 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT m2.* FROM menu m1,menu m2 WHERE m1.mid=m2.pid AND m2.pid=? 
+2020-10-15 15:12:04,502 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 5(Integer)
+2020-10-15 15:12:04,503 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 3
+2020-10-15 15:12:04,508 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT m2.* FROM menu m1,menu m2 WHERE m1.mid=m2.pid AND m2.pid=? 
+2020-10-15 15:12:04,508 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 6(Integer)
+2020-10-15 15:12:04,509 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 3
+2020-10-15 15:12:04,512 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT m2.* FROM menu m1,menu m2 WHERE m1.mid=m2.pid AND m2.pid=? 
+2020-10-15 15:12:04,513 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 9(Integer)
+2020-10-15 15:12:04,513 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 3
+2020-10-15 15:12:04,517 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT m2.* FROM menu m1,menu m2 WHERE m1.mid=m2.pid AND m2.pid=? 
+2020-10-15 15:12:04,517 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 7(Integer)
+2020-10-15 15:12:04,518 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 3
+2020-10-15 15:12:06,239 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select * from department 
+2020-10-15 15:12:06,240 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
+2020-10-15 15:12:06,242 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 7
+2020-10-15 15:12:06,252 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select * from department 
+2020-10-15 15:12:06,253 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
+2020-10-15 15:12:06,254 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 7
+2020-10-15 15:12:06,319 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT u.*,d.dName,ud.udid,d.did as did FROM `userdeparment` ud,`user` u,`department` d WHERE ud.uid=u.userid AND ud.did=d.did order by userid desc 
+2020-10-15 15:12:06,320 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
+2020-10-15 15:12:06,325 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 11
+2020-10-15 15:12:07,278 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT count(*) FROM mishu WHERE reject = 1 and submission = 0 and state in (1,2) 
+2020-10-15 15:12:07,279 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT count(*) FROM mishu WHERE submission = 0 and reject = 0 and state in (1,2) 
+2020-10-15 15:12:07,279 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT count(*) FROM mishu WHERE submission = 0 and reject = 0 and state in (1,2) 
+2020-10-15 15:12:07,279 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT count(*) FROM mishu WHERE reject = 1 and submission = 0 and state in (1,2) 
+2020-10-15 15:12:07,280 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
+2020-10-15 15:12:07,280 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
+2020-10-15 15:12:07,280 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
+2020-10-15 15:12:07,280 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
+2020-10-15 15:12:07,280 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT m.*,u.userName FROM mishu AS m,USER AS u WHERE m.`userId`=u.`userid` ORDER BY msId DESC 
+2020-10-15 15:12:07,281 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
+2020-10-15 15:12:07,281 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2020-10-15 15:12:07,281 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2020-10-15 15:12:07,283 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2020-10-15 15:12:07,289 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2020-10-15 15:12:07,291 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 14
+2020-10-15 15:12:08,030 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT m.*,u.userName FROM mishu AS m,USER AS u WHERE m.`userId`=u.`userid` AND reject = 0 AND submission = 1 and m.state in (1,2) ORDER BY msId DESC 
+2020-10-15 15:12:08,031 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
+2020-10-15 15:12:08,032 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 6
+2020-10-15 15:12:09,174 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT d.*,u.userName FROM designated AS d,USER AS u WHERE u.`userId`=d.`userid` ORDER BY dgId DESC 
+2020-10-15 15:12:09,175 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
+2020-10-15 15:12:09,190 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 7
+2020-10-15 15:12:09,562 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT d.*,u.userName FROM designated AS d,USER AS u WHERE u.`userId`=d.`userid` AND approval=1 AND submission = 1 and d.state in (1,2) ORDER BY dgId DESC 
+2020-10-15 15:12:09,563 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
+2020-10-15 15:12:09,564 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 3
+2020-10-15 15:12:10,062 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT d.*,u.userName FROM designated AS d,USER AS u WHERE u.`userId`=d.`userid` AND reject = 0 AND submission = 1 and d.state = 1 ORDER BY dgId DESC 
+2020-10-15 15:12:10,062 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
+2020-10-15 15:12:10,063 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 0
+2020-10-15 15:12:12,080 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT count(*) FROM substitutevehicle WHERE submission = 0 and reject = 0 and state in (1,2) 
+2020-10-15 15:12:12,081 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT count(*) FROM substitutevehicle WHERE submission = 0 and reject = 1 and state in (1,2) 
+2020-10-15 15:12:12,081 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
+2020-10-15 15:12:12,081 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
+2020-10-15 15:12:12,099 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT m.*,u.userName FROM substitutevehicle AS m,USER AS u WHERE m.`userId`=u.`userid` ORDER BY msId DESC 
+2020-10-15 15:12:12,100 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2020-10-15 15:12:12,100 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2020-10-15 15:12:12,100 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
+2020-10-15 15:12:12,111 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 12
+2020-10-15 15:12:12,573 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT count(*) FROM substitutevehicle WHERE state= 3 
+2020-10-15 15:12:12,573 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT nw.*,u.userName FROM `substitutevehicle` AS nw,USER AS u WHERE nw.`userId`=u.`userid` AND approval=1 AND submission = 1 AND nw.state IN (1,2) ORDER BY msId DESC 
+2020-10-15 15:12:12,573 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
+2020-10-15 15:12:12,573 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
+2020-10-15 15:12:12,576 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 4
+2020-10-15 15:12:12,579 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2020-10-15 15:12:13,090 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT m.*,u.userName FROM `substitutevehicle` AS m,USER AS u WHERE m.`userId`=u.`userid` AND reject = 0 AND submission = 1 AND m.state IN (1,2) ORDER BY msId DESC 
+2020-10-15 15:12:13,090 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
+2020-10-15 15:12:13,096 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 3
+2020-10-15 15:12:15,264 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT count(*) FROM newcar WHERE submission = 0 and reject = 0 and state = 1 
+2020-10-15 15:12:15,264 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
+2020-10-15 15:12:15,266 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT count(*) FROM newcar WHERE reject = 1 and submission = 0 and state =1 
+2020-10-15 15:12:15,266 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
+2020-10-15 15:12:15,272 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2020-10-15 15:12:15,274 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT nw.*,u.userName FROM newcar AS nw,USER AS u WHERE nw.`userId`=u.`userid` ORDER BY ncId DESC 
+2020-10-15 15:12:15,274 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
+2020-10-15 15:12:15,276 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2020-10-15 15:12:15,287 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 10
+2020-10-15 15:12:15,767 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT count(*) FROM newcar WHERE receive = 0 and approval = 1 
+2020-10-15 15:12:15,767 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
+2020-10-15 15:12:15,767 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT nw.*,u.userName FROM newcar AS nw,USER AS u WHERE nw.`userId`=u.`userid` AND approval=1 AND submission = 1 and receive = 1 and nw.state in (1,2) ORDER BY ncId DESC 
+2020-10-15 15:12:15,767 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT count(*) FROM newcar WHERE state= 3 
+2020-10-15 15:12:15,768 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
+2020-10-15 15:12:15,768 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
+2020-10-15 15:12:15,768 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2020-10-15 15:12:15,770 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2020-10-15 15:12:15,771 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2020-10-15 15:12:16,207 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT nw.*,u.userName FROM newcar AS nw,USER AS u WHERE nw.`userId`=u.`userid` AND reject = 0 AND submission = 1 and nw.state = 1 ORDER BY ncId DESC 
+2020-10-15 15:12:16,208 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
+2020-10-15 15:12:16,210 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 2
+2020-10-15 15:12:27,539 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT d.*,u.userName FROM designated AS d,USER AS u WHERE u.`userId`=d.`userid` AND reject = 0 AND submission = 1 and d.state = 1 ORDER BY dgId DESC 
+2020-10-15 15:12:27,540 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
+2020-10-15 15:12:27,546 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 0
+2020-10-15 15:12:28,540 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT m.*,u.userName FROM mishu AS m,USER AS u WHERE m.`userId`=u.`userid` AND reject = 0 AND submission = 1 and m.state in (1,2) ORDER BY msId DESC 
+2020-10-15 15:12:28,541 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
+2020-10-15 15:12:28,549 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 6
+2020-10-15 15:38:57,488 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT count(*) FROM mishu WHERE submission = 0 and reject = 0 and state in (1,2) 
+2020-10-15 15:38:57,489 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT count(*) FROM mishu WHERE reject = 1 and submission = 0 and state in (1,2) 
+2020-10-15 15:38:57,489 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT count(*) FROM mishu WHERE reject = 1 and submission = 0 and state in (1,2) 
+2020-10-15 15:38:57,488 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT count(*) FROM mishu WHERE submission = 0 and reject = 0 and state in (1,2) 
+2020-10-15 15:38:57,488 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT m.*,u.userName FROM mishu AS m,USER AS u WHERE m.`userId`=u.`userid` ORDER BY msId DESC 
+2020-10-15 15:38:57,490 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
+2020-10-15 15:38:57,490 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
+2020-10-15 15:38:57,490 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
+2020-10-15 15:38:57,490 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
+2020-10-15 15:38:57,490 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
+2020-10-15 15:38:57,494 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2020-10-15 15:38:57,494 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2020-10-15 15:38:57,494 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2020-10-15 15:38:57,499 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2020-10-15 15:38:57,500 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 14
+2020-10-15 15:38:57,656 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select * from department 
+2020-10-15 15:38:57,657 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
+2020-10-15 15:38:57,660 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 7
+2020-10-15 15:38:57,670 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select * from department 
+2020-10-15 15:38:57,670 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
+2020-10-15 15:38:57,672 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 7
+2020-10-15 15:38:57,731 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT u.*,d.dName,ud.udid,d.did as did FROM `userdeparment` ud,`user` u,`department` d WHERE ud.uid=u.userid AND ud.did=d.did order by userid desc 
+2020-10-15 15:38:57,731 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
+2020-10-15 15:38:57,743 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 11
+2020-10-15 16:55:43,725 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select * from department 
+2020-10-15 16:55:43,729 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
+2020-10-15 16:55:43,732 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select * from department 
+2020-10-15 16:55:43,733 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
+2020-10-15 16:55:43,740 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 7
+2020-10-15 16:55:43,740 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 7
+2020-10-15 16:55:43,866 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT u.*,d.dName,ud.udid,d.did as did FROM `userdeparment` ud,`user` u,`department` d WHERE ud.uid=u.userid AND ud.did=d.did order by userid desc 
+2020-10-15 16:55:43,867 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
+2020-10-15 16:55:43,877 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 11
+2020-10-15 17:15:31,827 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT u.*,d.dName,ud.udid,d.did FROM `userdeparment` ud,`user` u,`department` d WHERE ud.uid=u.userid AND ud.did=d.did and userCode = ? 
+2020-10-15 17:15:31,832 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: lijiawei(String)
+2020-10-15 17:15:31,851 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2020-10-15 17:15:31,873 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT * FROM user WHERE userCode = ? 
+2020-10-15 17:15:31,873 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: lijiawei(String)
+2020-10-15 17:15:31,875 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2020-10-15 17:15:34,555 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT * FROM user WHERE userCode = ? 
+2020-10-15 17:15:34,556 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: lijiawei(String)
+2020-10-15 17:15:34,556 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT * FROM user WHERE userCode = ? 
+2020-10-15 17:15:34,557 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: lijiawei(String)
+2020-10-15 17:15:34,557 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2020-10-15 17:15:34,560 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2020-10-15 17:15:35,527 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT * FROM user WHERE userCode = ? 
+2020-10-15 17:15:35,527 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: lijiawei(String)
+2020-10-15 17:15:35,540 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2020-10-15 17:15:44,418 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT u.*,d.dName,ud.udid,d.did FROM `userdeparment` ud,`user` u,`department` d WHERE ud.uid=u.userid AND ud.did=d.did and userCode = ? 
+2020-10-15 17:15:44,419 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: lijiawei(String)
+2020-10-15 17:15:44,421 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2020-10-15 17:15:44,437 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT * FROM user WHERE userCode = ? 
+2020-10-15 17:15:44,438 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: lijiawei(String)
+2020-10-15 17:15:44,440 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2020-10-15 17:15:47,211 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT * FROM user WHERE userCode = ? 
+2020-10-15 17:15:47,212 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: lijiawei(String)
+2020-10-15 17:15:47,216 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2020-10-15 17:15:47,217 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT * FROM user WHERE userCode = ? 
+2020-10-15 17:15:47,218 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: lijiawei(String)
+2020-10-15 17:15:47,221 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2020-10-15 17:15:48,806 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT * FROM user WHERE userCode = ? 
+2020-10-15 17:15:48,806 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: lijiawei(String)
+2020-10-15 17:15:48,806 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT * FROM user WHERE userCode = ? 
+2020-10-15 17:15:48,807 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: lijiawei(String)
+2020-10-15 17:15:48,808 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2020-10-15 17:15:48,808 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2020-10-15 17:15:48,961 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT * FROM user WHERE userCode = ? 
+2020-10-15 17:15:48,961 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: lijiawei(String)
+2020-10-15 17:15:48,963 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2020-10-15 17:15:48,965 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT * FROM user WHERE userCode = ? 
+2020-10-15 17:15:48,965 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: lijiawei(String)
+2020-10-15 17:15:48,967 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2020-10-15 17:15:49,097 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT * FROM user WHERE userCode = ? 
+2020-10-15 17:15:49,098 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: lijiawei(String)
+2020-10-15 17:15:49,099 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT * FROM user WHERE userCode = ? 
+2020-10-15 17:15:49,099 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: lijiawei(String)
+2020-10-15 17:15:49,099 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2020-10-15 17:15:49,101 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2020-10-15 17:15:49,242 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT * FROM user WHERE userCode = ? 
+2020-10-15 17:15:49,243 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT * FROM user WHERE userCode = ? 
+2020-10-15 17:15:49,242 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: lijiawei(String)
+2020-10-15 17:15:49,243 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: lijiawei(String)
+2020-10-15 17:15:49,245 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2020-10-15 17:15:49,245 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2020-10-15 17:15:52,462 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT * FROM user WHERE userCode = ? 
+2020-10-15 17:15:52,463 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: lijiawei(String)
+2020-10-15 17:15:52,464 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT * FROM user WHERE userCode = ? 
+2020-10-15 17:15:52,464 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: lijiawei(String)
+2020-10-15 17:15:52,465 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2020-10-15 17:15:52,465 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2020-10-15 17:15:55,506 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT u.*,d.dName,ud.udid,d.did FROM `userdeparment` ud,`user` u,`department` d WHERE ud.uid=u.userid AND ud.did=d.did and userCode = ? 
+2020-10-15 17:15:55,507 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: lijiawei(String)
+2020-10-15 17:15:55,516 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2020-10-15 17:15:55,532 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT * FROM user WHERE userCode = ? 
+2020-10-15 17:15:55,532 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: lijiawei(String)
+2020-10-15 17:15:55,533 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2020-10-15 17:16:12,443 INFO (StartupInfoLogger.java:50)- Starting PiccApplication on LAPTOP-APNN79DT with PID 3616 (C:\Users\Admin\IdeaProjects\picc\Picc\target\classes started by Admin in C:\Users\Admin\IdeaProjects\picc\Picc)
+2020-10-15 17:16:12,443 DEBUG (StartupInfoLogger.java:53)- Running with Spring Boot v2.1.3.RELEASE, Spring v5.1.5.RELEASE
+2020-10-15 17:16:12,444 INFO (SpringApplication.java:675)- No active profile set, falling back to default profiles: default
+2020-10-15 17:16:15,290 INFO (StartupInfoLogger.java:59)- Started PiccApplication in 3.53 seconds (JVM running for 5.542)
+2020-10-15 17:16:20,348 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT u.*,d.dName,ud.udid,d.did FROM `userdeparment` ud,`user` u,`department` d WHERE ud.uid=u.userid AND ud.did=d.did and userCode = ? 
+2020-10-15 17:16:20,372 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: lijiawei(String)
+2020-10-15 17:16:20,410 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2020-10-15 17:16:20,515 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT * FROM user WHERE userCode = ? 
+2020-10-15 17:16:20,515 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: lijiawei(String)
+2020-10-15 17:16:20,518 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2020-10-15 17:16:23,773 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT m.* FROM menu AS m,rolemenu AS rm WHERE m.mid=rm.mid AND rm.roleid=? AND m.pid IS NULL 
+2020-10-15 17:16:23,774 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 1(Integer)
+2020-10-15 17:16:23,796 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 6
+2020-10-15 17:16:23,817 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT m2.* FROM menu m1,menu m2 WHERE m1.mid=m2.pid AND m2.pid=? 
+2020-10-15 17:16:23,818 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 1(Integer)
+2020-10-15 17:16:23,825 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2020-10-15 17:16:23,831 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT m2.* FROM menu m1,menu m2 WHERE m1.mid=m2.pid AND m2.pid=? 
+2020-10-15 17:16:23,831 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 4(Integer)
+2020-10-15 17:16:23,833 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 2
+2020-10-15 17:16:23,839 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT m2.* FROM menu m1,menu m2 WHERE m1.mid=m2.pid AND m2.pid=? 
+2020-10-15 17:16:23,839 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 5(Integer)
+2020-10-15 17:16:23,840 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 3
+2020-10-15 17:16:23,845 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT m2.* FROM menu m1,menu m2 WHERE m1.mid=m2.pid AND m2.pid=? 
+2020-10-15 17:16:23,845 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 6(Integer)
+2020-10-15 17:16:23,847 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 3
+2020-10-15 17:16:23,852 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT m2.* FROM menu m1,menu m2 WHERE m1.mid=m2.pid AND m2.pid=? 
+2020-10-15 17:16:23,852 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 9(Integer)
+2020-10-15 17:16:23,855 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 3
+2020-10-15 17:16:23,860 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT m2.* FROM menu m1,menu m2 WHERE m1.mid=m2.pid AND m2.pid=? 
+2020-10-15 17:16:23,860 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 7(Integer)
+2020-10-15 17:16:23,862 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 3
+2020-10-15 17:16:26,540 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select * from department 
+2020-10-15 17:16:26,541 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
+2020-10-15 17:16:26,543 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 7
+2020-10-15 17:16:26,557 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select * from department 
+2020-10-15 17:16:26,558 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
+2020-10-15 17:16:26,566 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 7
+2020-10-15 17:16:26,639 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT u.*,d.dName,ud.udid,d.did as did FROM `userdeparment` ud,`user` u,`department` d WHERE ud.uid=u.userid AND ud.did=d.did order by userid desc 
+2020-10-15 17:16:26,640 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
+2020-10-15 17:16:26,645 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 11
+2020-10-15 17:16:28,499 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT u.*,d.dName,ud.udid,d.did FROM `userdeparment` ud,`user` u,`department` d WHERE ud.uid=u.userid AND ud.did=d.did and userCode = ? 
+2020-10-15 17:16:28,500 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: lijiawei(String)
+2020-10-15 17:16:28,501 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2020-10-15 17:16:28,517 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT * FROM user WHERE userCode = ? 
+2020-10-15 17:16:28,518 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: lijiawei(String)
+2020-10-15 17:16:28,520 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2020-10-15 17:16:31,642 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT u.*,d.dName,ud.udid,d.did FROM `userdeparment` ud,`user` u,`department` d WHERE ud.uid=u.userid AND ud.did=d.did and userCode = ? 
+2020-10-15 17:16:31,642 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: lijiawei(String)
+2020-10-15 17:16:31,645 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2020-10-15 17:16:31,663 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT * FROM user WHERE userCode = ? 
+2020-10-15 17:16:31,664 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: lijiawei(String)
+2020-10-15 17:16:31,666 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2020-10-15 17:16:36,724 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT * FROM user WHERE userCode = ? 
+2020-10-15 17:16:36,726 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: lijiawei(String)
+2020-10-15 17:16:36,727 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT * FROM user WHERE userCode = ? 
+2020-10-15 17:16:36,728 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: lijiawei(String)
+2020-10-15 17:16:36,728 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2020-10-15 17:16:36,732 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2020-10-15 17:16:47,436 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT u.*,d.dName,ud.udid,d.did FROM `userdeparment` ud,`user` u,`department` d WHERE ud.uid=u.userid AND ud.did=d.did and userCode = ? 
+2020-10-15 17:16:47,437 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: admins(String)
+2020-10-15 17:16:47,439 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2020-10-15 17:16:47,460 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT * FROM user WHERE userCode = ? 
+2020-10-15 17:16:47,460 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: admins(String)
+2020-10-15 17:16:47,462 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2020-10-15 17:16:55,206 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT m.* FROM menu AS m,rolemenu AS rm WHERE m.mid=rm.mid AND rm.roleid=? AND m.pid IS NULL 
+2020-10-15 17:16:55,207 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 1(Integer)
+2020-10-15 17:16:55,210 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 6
+2020-10-15 17:16:55,218 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT m2.* FROM menu m1,menu m2 WHERE m1.mid=m2.pid AND m2.pid=? 
+2020-10-15 17:16:55,218 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 1(Integer)
+2020-10-15 17:16:55,220 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2020-10-15 17:16:55,225 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT m2.* FROM menu m1,menu m2 WHERE m1.mid=m2.pid AND m2.pid=? 
+2020-10-15 17:16:55,225 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 4(Integer)
+2020-10-15 17:16:55,228 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 2
+2020-10-15 17:16:55,234 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT m2.* FROM menu m1,menu m2 WHERE m1.mid=m2.pid AND m2.pid=? 
+2020-10-15 17:16:55,234 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 5(Integer)
+2020-10-15 17:16:55,236 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 3
+2020-10-15 17:16:55,240 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT m2.* FROM menu m1,menu m2 WHERE m1.mid=m2.pid AND m2.pid=? 
+2020-10-15 17:16:55,240 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 6(Integer)
+2020-10-15 17:16:55,241 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 3
+2020-10-15 17:16:55,247 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT m2.* FROM menu m1,menu m2 WHERE m1.mid=m2.pid AND m2.pid=? 
+2020-10-15 17:16:55,248 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 9(Integer)
+2020-10-15 17:16:55,249 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 3
+2020-10-15 17:16:55,254 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT m2.* FROM menu m1,menu m2 WHERE m1.mid=m2.pid AND m2.pid=? 
+2020-10-15 17:16:55,254 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 7(Integer)
+2020-10-15 17:16:55,255 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 3
+2020-10-15 17:16:55,485 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT m.* FROM menu AS m,rolemenu AS rm WHERE m.mid=rm.mid AND rm.roleid=? AND m.pid IS NULL 
+2020-10-15 17:16:55,486 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 1(Integer)
+2020-10-15 17:16:55,489 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 6
+2020-10-15 17:16:55,499 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT m2.* FROM menu m1,menu m2 WHERE m1.mid=m2.pid AND m2.pid=? 
+2020-10-15 17:16:55,500 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 1(Integer)
+2020-10-15 17:16:55,502 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2020-10-15 17:16:55,506 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT m2.* FROM menu m1,menu m2 WHERE m1.mid=m2.pid AND m2.pid=? 
+2020-10-15 17:16:55,506 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 4(Integer)
+2020-10-15 17:16:55,508 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 2
+2020-10-15 17:16:55,515 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT m2.* FROM menu m1,menu m2 WHERE m1.mid=m2.pid AND m2.pid=? 
+2020-10-15 17:16:55,515 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 5(Integer)
+2020-10-15 17:16:55,517 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 3
+2020-10-15 17:16:55,521 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT m2.* FROM menu m1,menu m2 WHERE m1.mid=m2.pid AND m2.pid=? 
+2020-10-15 17:16:55,521 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 6(Integer)
+2020-10-15 17:16:55,522 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 3
+2020-10-15 17:16:55,527 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT m2.* FROM menu m1,menu m2 WHERE m1.mid=m2.pid AND m2.pid=? 
+2020-10-15 17:16:55,527 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 9(Integer)
+2020-10-15 17:16:55,529 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 3
+2020-10-15 17:16:55,534 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT m2.* FROM menu m1,menu m2 WHERE m1.mid=m2.pid AND m2.pid=? 
+2020-10-15 17:16:55,534 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 7(Integer)
+2020-10-15 17:16:55,535 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 3
+2020-10-15 17:16:58,522 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select * from department 
+2020-10-15 17:16:58,523 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
+2020-10-15 17:16:58,526 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 7
+2020-10-15 17:16:58,537 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select * from department 
+2020-10-15 17:16:58,537 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
+2020-10-15 17:16:58,539 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 7
+2020-10-15 17:16:58,611 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT u.*,d.dName,ud.udid,d.did as did FROM `userdeparment` ud,`user` u,`department` d WHERE ud.uid=u.userid AND ud.did=d.did order by userid desc 
+2020-10-15 17:16:58,611 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
+2020-10-15 17:16:58,616 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 11
+2020-10-15 17:17:00,123 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT u.*,d.dName,ud.udid,d.did FROM `userdeparment` ud,`user` u,`department` d WHERE ud.uid=u.userid AND ud.did=d.did and userCode = ? 
+2020-10-15 17:17:00,124 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: lijiawei(String)
+2020-10-15 17:17:00,125 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2020-10-15 17:17:00,142 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT * FROM user WHERE userCode = ? 
+2020-10-15 17:17:00,143 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: lijiawei(String)
+2020-10-15 17:17:00,145 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2020-10-15 17:17:04,065 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT u.*,d.dName,ud.udid,d.did FROM `userdeparment` ud,`user` u,`department` d WHERE ud.uid=u.userid AND ud.did=d.did and userCode = ? 
+2020-10-15 17:17:04,066 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: lijiawei(String)
+2020-10-15 17:17:04,082 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2020-10-15 17:17:04,099 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT * FROM user WHERE userCode = ? 
+2020-10-15 17:17:04,100 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: lijiawei(String)
+2020-10-15 17:17:04,101 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2020-10-15 17:17:31,227 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT u.*,ur.rid FROM USER u,userrole ur WHERE u.userid=ur.uid AND userCode=? and userPwd=? 
+2020-10-15 17:17:31,228 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: admin(String), 123456(String)
+2020-10-15 17:17:31,240 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2020-10-15 17:17:31,451 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT m.* FROM menu AS m,rolemenu AS rm WHERE m.mid=rm.mid AND rm.roleid=? AND m.pid IS NULL 
+2020-10-15 17:17:31,452 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 1(Integer)
+2020-10-15 17:17:31,455 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 6
+2020-10-15 17:17:31,463 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT m2.* FROM menu m1,menu m2 WHERE m1.mid=m2.pid AND m2.pid=? 
+2020-10-15 17:17:31,464 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 1(Integer)
+2020-10-15 17:17:31,466 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2020-10-15 17:17:31,474 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT m2.* FROM menu m1,menu m2 WHERE m1.mid=m2.pid AND m2.pid=? 
+2020-10-15 17:17:31,474 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 4(Integer)
+2020-10-15 17:17:31,476 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 2
+2020-10-15 17:17:31,485 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT m2.* FROM menu m1,menu m2 WHERE m1.mid=m2.pid AND m2.pid=? 
+2020-10-15 17:17:31,485 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 5(Integer)
+2020-10-15 17:17:31,488 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 3
+2020-10-15 17:17:31,495 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT m2.* FROM menu m1,menu m2 WHERE m1.mid=m2.pid AND m2.pid=? 
+2020-10-15 17:17:31,495 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 6(Integer)
+2020-10-15 17:17:31,496 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 3
+2020-10-15 17:17:31,502 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT m2.* FROM menu m1,menu m2 WHERE m1.mid=m2.pid AND m2.pid=? 
+2020-10-15 17:17:31,502 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 9(Integer)
+2020-10-15 17:17:31,504 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 3
+2020-10-15 17:17:31,509 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT m2.* FROM menu m1,menu m2 WHERE m1.mid=m2.pid AND m2.pid=? 
+2020-10-15 17:17:31,510 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 7(Integer)
+2020-10-15 17:17:31,511 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 3
+2020-10-15 17:17:33,627 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select * from department 
+2020-10-15 17:17:33,627 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
+2020-10-15 17:17:33,629 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 7
+2020-10-15 17:17:33,640 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select * from department 
+2020-10-15 17:17:33,640 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
+2020-10-15 17:17:33,642 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 7
+2020-10-15 17:17:33,707 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT u.*,d.dName,ud.udid,d.did as did FROM `userdeparment` ud,`user` u,`department` d WHERE ud.uid=u.userid AND ud.did=d.did order by userid desc 
+2020-10-15 17:17:33,708 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
+2020-10-15 17:17:33,711 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 11
+2020-10-15 17:17:35,313 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT u.*,d.dName,ud.udid,d.did FROM `userdeparment` ud,`user` u,`department` d WHERE ud.uid=u.userid AND ud.did=d.did and userCode = ? 
+2020-10-15 17:17:35,314 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: lijiawei(String)
+2020-10-15 17:17:35,315 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2020-10-15 17:17:35,330 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT * FROM user WHERE userCode = ? 
+2020-10-15 17:17:35,331 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: lijiawei(String)
+2020-10-15 17:17:35,333 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2020-10-15 17:17:38,208 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT u.*,d.dName,ud.udid,d.did FROM `userdeparment` ud,`user` u,`department` d WHERE ud.uid=u.userid AND ud.did=d.did and userCode = ? 
+2020-10-15 17:17:38,209 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: admin(String)
+2020-10-15 17:17:38,210 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2020-10-15 17:17:38,226 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT * FROM user WHERE userCode = ? 
+2020-10-15 17:17:38,226 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: admin(String)
+2020-10-15 17:17:38,228 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2020-10-15 17:17:40,474 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT u.*,d.dName,ud.udid,d.did FROM `userdeparment` ud,`user` u,`department` d WHERE ud.uid=u.userid AND ud.did=d.did and userCode = ? 
+2020-10-15 17:17:40,475 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: lijiawei(String)
+2020-10-15 17:17:40,477 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2020-10-15 17:17:40,491 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT * FROM user WHERE userCode = ? 
+2020-10-15 17:17:40,491 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: lijiawei(String)
+2020-10-15 17:17:40,493 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1

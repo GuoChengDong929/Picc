@@ -1,0 +1,157 @@
+2019-12-13 13:56:37,318 INFO (StartupInfoLogger.java:50)- Starting PiccApplication on 孙旭超的DEll with PID 18076 (started by DELL in E:\Gao_XM\picc-XM\Picc项目\Picc后台\Picc)
+2019-12-13 13:56:37,319 DEBUG (StartupInfoLogger.java:53)- Running with Spring Boot v2.1.3.RELEASE, Spring v5.1.5.RELEASE
+2019-12-13 13:56:37,320 INFO (SpringApplication.java:675)- No active profile set, falling back to default profiles: default
+2019-12-13 13:56:39,630 INFO (StartupInfoLogger.java:59)- Started PiccApplication in 2.809 seconds (JVM running for 5.348)
+2019-12-13 13:57:49,016 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT u.*,ur.rid FROM USER u,userrole ur WHERE u.userid=ur.uid AND userCode=? and userPwd=? 
+2019-12-13 13:57:49,029 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: admin(String), 123(String)
+2019-12-13 13:57:49,147 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2019-12-13 13:57:49,450 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT m.* FROM menu AS m,rolemenu AS rm WHERE m.mid=rm.mid AND rm.roleid=? AND m.pid IS NULL 
+2019-12-13 13:57:49,450 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 1(Integer)
+2019-12-13 13:57:49,486 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 6
+2019-12-13 13:57:49,499 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT m2.* FROM menu m1,menu m2 WHERE m1.mid=m2.pid AND m2.pid=? 
+2019-12-13 13:57:49,499 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 1(Integer)
+2019-12-13 13:57:49,501 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2019-12-13 13:57:49,504 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT m2.* FROM menu m1,menu m2 WHERE m1.mid=m2.pid AND m2.pid=? 
+2019-12-13 13:57:49,504 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 4(Integer)
+2019-12-13 13:57:49,505 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 2
+2019-12-13 13:57:49,507 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT m2.* FROM menu m1,menu m2 WHERE m1.mid=m2.pid AND m2.pid=? 
+2019-12-13 13:57:49,508 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 5(Integer)
+2019-12-13 13:57:49,509 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 3
+2019-12-13 13:57:49,512 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT m2.* FROM menu m1,menu m2 WHERE m1.mid=m2.pid AND m2.pid=? 
+2019-12-13 13:57:49,512 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 6(Integer)
+2019-12-13 13:57:49,513 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 3
+2019-12-13 13:57:49,515 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT m2.* FROM menu m1,menu m2 WHERE m1.mid=m2.pid AND m2.pid=? 
+2019-12-13 13:57:49,516 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 9(Integer)
+2019-12-13 13:57:49,517 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 3
+2019-12-13 13:57:49,520 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT m2.* FROM menu m1,menu m2 WHERE m1.mid=m2.pid AND m2.pid=? 
+2019-12-13 13:57:49,520 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 7(Integer)
+2019-12-13 13:57:49,521 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 3
+2019-12-13 13:57:52,066 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select * from department 
+2019-12-13 13:57:52,067 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
+2019-12-13 13:57:52,069 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 7
+2019-12-13 13:57:52,078 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select * from department 
+2019-12-13 13:57:52,079 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
+2019-12-13 13:57:52,080 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 7
+2019-12-13 13:57:52,147 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT u.*,d.dName,ud.udid,d.did as did FROM `userdeparment` ud,`user` u,`department` d WHERE ud.uid=u.userid AND ud.did=d.did order by userid desc 
+2019-12-13 13:57:52,147 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
+2019-12-13 13:57:52,169 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 10
+2019-12-13 13:57:55,436 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT count(*) FROM mishu WHERE submission = 0 and reject = 0 and state in (1,2) 
+2019-12-13 13:57:55,436 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT count(*) FROM mishu WHERE reject = 1 and submission = 0 and state in (1,2) 
+2019-12-13 13:57:55,436 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT count(*) FROM mishu WHERE submission = 0 and reject = 0 and state in (1,2) 
+2019-12-13 13:57:55,437 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT count(*) FROM mishu WHERE reject = 1 and submission = 0 and state in (1,2) 
+2019-12-13 13:57:55,438 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
+2019-12-13 13:57:55,438 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
+2019-12-13 13:57:55,438 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
+2019-12-13 13:57:55,438 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
+2019-12-13 13:57:55,444 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT m.*,u.userName FROM mishu AS m,USER AS u WHERE m.`userId`=u.`userid` ORDER BY msId DESC 
+2019-12-13 13:57:55,444 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
+2019-12-13 13:57:55,444 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2019-12-13 13:57:55,444 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2019-12-13 13:57:55,444 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2019-12-13 13:57:55,444 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2019-12-13 13:57:55,451 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 14
+2019-12-13 13:57:56,391 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT m.*,u.userName FROM mishu AS m,USER AS u WHERE m.`userId`=u.`userid` AND reject = 0 AND submission = 1 and m.state in (1,2) ORDER BY msId DESC 
+2019-12-13 13:57:56,391 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
+2019-12-13 13:57:56,395 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 6
+2019-12-13 13:58:00,035 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT d.*,u.userName FROM designated AS d,USER AS u WHERE u.`userId`=d.`userid` ORDER BY dgId DESC 
+2019-12-13 13:58:00,035 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
+2019-12-13 13:58:00,039 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 7
+2019-12-13 13:58:00,886 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT d.*,u.userName FROM designated AS d,USER AS u WHERE u.`userId`=d.`userid` AND approval=1 AND submission = 1 and d.state in (1,2) ORDER BY dgId DESC 
+2019-12-13 13:58:00,887 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
+2019-12-13 13:58:00,889 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 3
+2019-12-13 13:58:01,412 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT d.*,u.userName FROM designated AS d,USER AS u WHERE u.`userId`=d.`userid` AND reject = 0 AND submission = 1 and d.state = 1 ORDER BY dgId DESC 
+2019-12-13 13:58:01,412 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
+2019-12-13 13:58:01,412 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 0
+2019-12-13 13:58:03,108 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT count(*) FROM substitutevehicle WHERE state= 3 
+2019-12-13 13:58:03,108 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
+2019-12-13 13:58:03,109 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT nw.*,u.userName FROM `substitutevehicle` AS nw,USER AS u WHERE nw.`userId`=u.`userid` AND approval=1 AND submission = 1 AND nw.state IN (1,2) ORDER BY msId DESC 
+2019-12-13 13:58:03,110 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
+2019-12-13 13:58:03,111 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2019-12-13 13:58:03,113 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 4
+2019-12-13 13:58:03,493 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT count(*) FROM substitutevehicle WHERE submission = 0 and reject = 1 and state in (1,2) 
+2019-12-13 13:58:03,493 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT count(*) FROM substitutevehicle WHERE submission = 0 and reject = 0 and state in (1,2) 
+2019-12-13 13:58:03,493 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
+2019-12-13 13:58:03,493 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
+2019-12-13 13:58:03,493 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT m.*,u.userName FROM substitutevehicle AS m,USER AS u WHERE m.`userId`=u.`userid` ORDER BY msId DESC 
+2019-12-13 13:58:03,494 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
+2019-12-13 13:58:03,494 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2019-12-13 13:58:03,496 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2019-12-13 13:58:03,504 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 12
+2019-12-13 13:58:03,852 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT m.*,u.userName FROM `substitutevehicle` AS m,USER AS u WHERE m.`userId`=u.`userid` AND reject = 0 AND submission = 1 AND m.state IN (1,2) ORDER BY msId DESC 
+2019-12-13 13:58:03,852 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
+2019-12-13 13:58:03,855 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 3
+2019-12-13 13:58:05,272 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT count(*) FROM newcar WHERE reject = 1 and submission = 0 and state =1 
+2019-12-13 13:58:05,272 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT count(*) FROM newcar WHERE submission = 0 and reject = 0 and state = 1 
+2019-12-13 13:58:05,272 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
+2019-12-13 13:58:05,272 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
+2019-12-13 13:58:05,274 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT nw.*,u.userName FROM newcar AS nw,USER AS u WHERE nw.`userId`=u.`userid` ORDER BY ncId DESC 
+2019-12-13 13:58:05,274 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
+2019-12-13 13:58:05,276 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2019-12-13 13:58:05,276 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2019-12-13 13:58:05,279 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 10
+2019-12-13 13:58:05,591 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT count(*) FROM newcar WHERE receive = 0 and approval = 1 
+2019-12-13 13:58:05,591 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT count(*) FROM newcar WHERE state= 3 
+2019-12-13 13:58:05,591 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
+2019-12-13 13:58:05,591 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
+2019-12-13 13:58:05,592 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT nw.*,u.userName FROM newcar AS nw,USER AS u WHERE nw.`userId`=u.`userid` AND approval=1 AND submission = 1 and receive = 1 and nw.state in (1,2) ORDER BY ncId DESC 
+2019-12-13 13:58:05,592 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2019-12-13 13:58:05,592 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
+2019-12-13 13:58:05,592 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2019-12-13 13:58:05,593 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2019-12-13 13:58:05,892 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT nw.*,u.userName FROM newcar AS nw,USER AS u WHERE nw.`userId`=u.`userid` AND reject = 0 AND submission = 1 and nw.state = 1 ORDER BY ncId DESC 
+2019-12-13 13:58:05,893 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
+2019-12-13 13:58:05,894 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 2
+2019-12-13 13:58:14,294 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select * from department 
+2019-12-13 13:58:14,294 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
+2019-12-13 13:58:14,297 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 7
+2019-12-13 13:58:14,309 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select * from department 
+2019-12-13 13:58:14,309 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
+2019-12-13 13:58:14,312 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 7
+2019-12-13 13:58:14,366 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT u.*,d.dName,ud.udid,d.did as did FROM `userdeparment` ud,`user` u,`department` d WHERE ud.uid=u.userid AND ud.did=d.did order by userid desc 
+2019-12-13 13:58:14,367 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
+2019-12-13 13:58:14,374 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 10
+2019-12-13 13:58:17,512 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT m.*,u.userName FROM mishu AS m,USER AS u WHERE m.`userId`=u.`userid` AND reject = 0 AND submission = 1 and m.state in (1,2) ORDER BY msId DESC 
+2019-12-13 13:58:17,512 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
+2019-12-13 13:58:17,515 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 6
+2019-12-13 13:58:18,320 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT count(*) FROM mishu WHERE reject = 1 and submission = 0 and state in (1,2) 
+2019-12-13 13:58:18,320 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT count(*) FROM mishu WHERE submission = 0 and reject = 0 and state in (1,2) 
+2019-12-13 13:58:18,322 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
+2019-12-13 13:58:18,322 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
+2019-12-13 13:58:18,323 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT m.*,u.userName FROM mishu AS m,USER AS u WHERE m.`userId`=u.`userid` ORDER BY msId DESC 
+2019-12-13 13:58:18,323 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2019-12-13 13:58:18,323 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2019-12-13 13:58:18,323 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
+2019-12-13 13:58:18,323 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT count(*) FROM mishu WHERE submission = 0 and reject = 0 and state in (1,2) 
+2019-12-13 13:58:18,324 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT count(*) FROM mishu WHERE reject = 1 and submission = 0 and state in (1,2) 
+2019-12-13 13:58:18,324 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
+2019-12-13 13:58:18,324 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
+2019-12-13 13:58:18,324 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2019-12-13 13:58:18,325 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2019-12-13 13:58:18,326 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 14
+2019-12-13 13:58:47,583 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT d.*,u.userName FROM designated AS d,USER AS u WHERE u.`userId`=d.`userid` ORDER BY dgId DESC 
+2019-12-13 13:58:47,584 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
+2019-12-13 13:58:47,587 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 7
+2019-12-13 13:58:48,077 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT d.*,u.userName FROM designated AS d,USER AS u WHERE u.`userId`=d.`userid` AND approval=1 AND submission = 1 and d.state in (1,2) ORDER BY dgId DESC 
+2019-12-13 13:58:48,078 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
+2019-12-13 13:58:48,080 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 3
+2019-12-13 13:58:48,625 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT d.*,u.userName FROM designated AS d,USER AS u WHERE u.`userId`=d.`userid` AND reject = 0 AND submission = 1 and d.state = 1 ORDER BY dgId DESC 
+2019-12-13 13:58:48,626 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
+2019-12-13 13:58:48,629 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 0
+2019-12-13 13:58:50,570 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT count(*) FROM substitutevehicle WHERE state= 3 
+2019-12-13 13:58:50,570 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
+2019-12-13 13:58:50,571 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT nw.*,u.userName FROM `substitutevehicle` AS nw,USER AS u WHERE nw.`userId`=u.`userid` AND approval=1 AND submission = 1 AND nw.state IN (1,2) ORDER BY msId DESC 
+2019-12-13 13:58:50,571 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
+2019-12-13 13:58:50,571 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2019-12-13 13:58:50,572 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 4
+2019-12-13 13:58:50,961 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT count(*) FROM substitutevehicle WHERE submission = 0 and reject = 0 and state in (1,2) 
+2019-12-13 13:58:50,962 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
+2019-12-13 13:58:50,962 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT count(*) FROM substitutevehicle WHERE submission = 0 and reject = 1 and state in (1,2) 
+2019-12-13 13:58:50,962 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT m.*,u.userName FROM substitutevehicle AS m,USER AS u WHERE m.`userId`=u.`userid` ORDER BY msId DESC 
+2019-12-13 13:58:50,962 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
+2019-12-13 13:58:50,962 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
+2019-12-13 13:58:50,963 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2019-12-13 13:58:50,963 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2019-12-13 13:58:50,964 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 12
+2019-12-13 13:58:51,252 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: SELECT m.*,u.userName FROM `substitutevehicle` AS m,USER AS u WHERE m.`userId`=u.`userid` AND reject = 0 AND submission = 1 AND m.state IN (1,2) ORDER BY msId DESC 
+2019-12-13 13:58:51,252 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
+2019-12-13 13:58:51,253 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 3
